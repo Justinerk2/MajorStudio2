@@ -1,0 +1,28 @@
+,Men p,Women p,Boys p,Girls p
+Female Political Leader,0.07,0.11,0.04,0.08
+Male Political Leader,0.17,0.12,0.4,0.23
+Neutral Political Leader,0.74,0.76,0.56,0.69
+Men Senate,0.8,0.8,0.8,0.8
+WomenSenate,0.2,0.2,0.2,0.2
+Men House of Representatives,0.81,0.81,0.81,0.81
+Women House of Representatives,0.19,0.19,0.19,0.19
+Men State Legislators,0.758,0.758,0.758,0.758
+Women State Legislators,0.242,0.242,0.242,0.242
+Men Governors,0.9,0.9,0.9,0.9
+Women Governors,0.1,0.1,0.1,0.1
+Men US Federal Court Judges,0.76,0.76,0.76,0.76
+Women US Federal Court Judges,0.24,0.24,0.24,0.24
+Men US State Court Judges,0.73,0.73,0.73,0.73
+Women US State Court Judges,0.27,0.27,0.27,0.27
+Men CEOs Fortune 500,0.95,0.95,0.95,0.95
+Women CEOs Fortune 501,0.05,0.05,0.05,0.05
+Men Corporate Board Fortune 500,0.831,0.831,0.831,0.831
+Women Corporate Board Fortune 501,0.169,0.169,0.169,0.169
+Men Senior Store Manager,0.78,0.78,0.78,0.78
+Women Senior Store Manager,0.22,0.22,0.22,0.22
+Men Phsyician,0.7,0.7,0.7,0.7
+Women Phsyician,0.3,0.3,0.3,0.3
+Men Employeed Engineers,0.87,0.87,0.87,0.87
+Women Employeed Engineers,0.13,0.13,0.13,0.13
+Men S&P 1500 companies ,0.842,0.842,0.842,0.842
+Women S&P 1500 companies ,0.158,0.158,0.158,0.158
