@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="792px"
+	 height="612px" viewBox="0 0 792 612" enable-background="new 0 0 792 612" xml:space="preserve">
+<g id="Senate_Percent">
+	<g>
+		<rect x="186.987" y="194.346" fill="#FFF1E2" width="182.684" height="182.681"/>
+		<rect x="186.987" y="342.316" opacity="0.5" fill="#767C6D" width="182.684" height="34.711"/>
+	</g>
+	<g>
+		<rect x="411.316" y="191.001" fill="#E3EFE5" width="182.684" height="185.241"/>
+		<rect x="411.313" y="191.001" opacity="0.5" fill="#767C6D" width="182.688" height="150.044"/>
+	</g>
+</g>
+<g id="Senate_Boys_WL">
+	<rect x="186.987" y="369" fill="none" stroke="#F0895A" stroke-width="4" stroke-miterlimit="10" width="182.684" height="7.305"/>
+	
+		<rect x="186.987" y="264.073" fill="none" stroke="#EECAB2" stroke-width="4" stroke-miterlimit="10" width="182.684" height="102.301"/>
+</g>
+<g id="Senate_Boys_ML">
+	
+		<rect x="411.314" y="266.698" fill="none" stroke="#EECAB2" stroke-width="4" stroke-miterlimit="10" width="182.684" height="102.302"/>
+	
+		<rect x="411.314" y="191.001" fill="none" stroke="#F0895A" stroke-width="4" stroke-miterlimit="10" width="182.684" height="73.072"/>
+</g>
+<g id="Senate_Boys_Text">
+	<g>
+		<path fill="#F0895A" d="M126.771,279c-0.311-1.475-0.539-3.801-0.539-6.166c0-3.375,0.576-5.549,1.885-7.176
+			c0.998-1.357,2.533-2.174,4.57-2.174c2.498,0,4.688,1.668,5.686,4.422h0.08c0.611-2.482,2.648-5.391,6.492-5.391
+			c2.227,0,3.916,0.893,5.184,2.209c1.652,1.826,2.422,4.771,2.422,9.039c0,2.328-0.152,4.111-0.309,5.236H126.771z
+			 M137.375,275.627v-3.064c0-3.57-1.844-5.664-4.344-5.664c-3.031,0-4.227,2.328-4.227,5.742c0,1.551,0.117,2.443,0.234,2.986
+			H137.375z M149.785,275.627c0.113-0.658,0.154-1.631,0.154-2.832c0-3.49-1.268-6.711-5.037-6.711c-3.531,0-4.992,3.064-4.992,6.75
+			v2.793H149.785z"/>
+		<path fill="#F0895A" d="M139.102,235.637c8.916,0,13.641,5.471,13.641,12.143c0,6.904-5.301,11.756-13.139,11.756
+			c-8.225,0-13.604-5.162-13.604-12.145C126,240.254,131.418,235.637,139.102,235.637z M139.527,255.926
+			c5.531,0,10.488-3.025,10.488-8.342c0-5.352-4.881-8.377-10.758-8.377c-5.15,0-10.527,2.715-10.527,8.34
+			C128.73,253.133,133.838,255.926,139.527,255.926z"/>
+		<path fill="#F0895A" d="M152.32,226.527h-10.988l-14.906,8.266v-3.844l7.143-3.686c1.963-1.01,3.539-1.783,5.344-2.598v-0.078
+			c-1.693-0.736-3.381-1.629-5.344-2.639l-7.143-3.762v-3.84l14.867,8.766h11.027V226.527z"/>
+		<path fill="#F0895A" d="M148.246,212.336c0.926-1.514,1.693-3.725,1.693-6.051c0-3.453-1.807-5.473-4.418-5.473
+			c-2.42,0-3.807,1.398-5.15,4.926c-1.5,4.27-3.688,6.906-7.34,6.906c-4.033,0-7.031-3.375-7.031-8.457
+			c0-2.676,0.617-4.615,1.27-5.779l2.73,0.93c-0.463,0.854-1.23,2.602-1.23,4.967c0,3.568,2.113,4.928,3.879,4.928
+			c2.42,0,3.613-1.592,4.996-5.197c1.689-4.422,3.805-6.674,7.607-6.674c3.994,0,7.451,2.988,7.451,9.156
+			c0,2.521-0.727,5.275-1.652,6.67L148.246,212.336z"/>
+	</g>
+</g>
+<g id="Senate_Boys_WL_Stat">
+	<rect x="186.477" y="252.57" fill="none" width="174.684" height="20.938"/>
+	<text transform="matrix(1 0 0 1 186.4771 263.1533)" fill="#EECAB2" font-family="'AvenirLTStd-Black'" font-size="14">56% No Preference</text>
+	<rect x="188.987" y="358.531" fill="none" width="174.684" height="20.938"/>
+	<text transform="matrix(1 0 0 1 188.9873 369.1143)" fill="#F0895A" font-family="'AvenirLTStd-Black'" font-size="14">4% Prefer Women</text>
+</g>
+<g id="Senate_Boys_ML_Stat">
+	<rect x="414" y="250.578" fill="none" width="174.684" height="20.938"/>
+	<text transform="matrix(1 0 0 1 414 261.1616)" fill="#F0895A" font-family="'AvenirLTStd-Black'" font-size="14">40% Prefer Men</text>
+	<rect x="414" y="355.305" fill="none" width="174.684" height="20.938"/>
+	<text transform="matrix(1 0 0 1 414 365.8887)" fill="#EECAB2" font-family="'AvenirLTStd-Black'" font-size="14">56% No Preference</text>
+</g>
+<g id="Senate_W_Stat">
+	<rect x="190.987" y="327.333" fill="none" width="174.684" height="20.938"/>
+	
+		<text transform="matrix(1 0 0 1 190.9873 340.9414)" opacity="0.5" fill="#767C6D" font-family="'AvenirLTStd-Black'" font-size="18">Senate Women 20%</text>
+</g>
+<g id="Senate_M_Stat">
+	<rect x="430.48" y="327.333" fill="none" width="144.352" height="20.938"/>
+	<text transform="matrix(1 0 0 1 430.4805 340.9414)" fill="#F1F2F2" font-family="'AvenirLTStd-Black'" font-size="18">Senate Men 20%</text>
+</g>
+</svg>
