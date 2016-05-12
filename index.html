@@ -17,23 +17,27 @@
 		color: Gray;
 	    width: 100%;
 	    position: absolute;
+	justify-content: center;
+	   
 	}
 #stat {
 	position:relative;
 	width: 100%;
+	justify-content: center;
 
 }
 #key {
 	position:relative;
 	width: 100%;
+	justify-content: center;
 }
 
 	/*CSS rollover applied to SVG*/
 
 
-	svg, img {
-		padding: 1%;
-	}
+	/*svg, img {*/
+	/*	padding: 1%;*/
+	/*}*/
 
 </style>
 </head>
@@ -71,14 +75,14 @@
                 
                 element.insert("div",":first-child")
 					.style("position", "relative")
-					.style("top", "20px")
-					.style("text-transform", "uppercase")
-					.text(element.attr("title"));
+					.style("justify-content", "center");
+					// .style("top", "20px")
+					// .text(element.attr("title"));
 					
-                element.append("div")
-					.style("position", "relative")
-					.style("bottom", "40px")
-					.text(element.attr("caption"));	
+     //           element.append("div")
+					// .style("position", "relative")
+					// .style("bottom", "40px")
+					// .text(element.attr("caption"));	
     });
     //sentate Men
      d3.xml("svg/senateMen.svg", function(xml) {
@@ -92,13 +96,8 @@
                 element.insert("div",":first-child")
 					.style("position", "relative")
 					.style("top", "20px")
-					.style("text-transform", "uppercase")
-					.text(element.attr("title"));
+					.style("justify-content", "center");
 					
-                element.append("div")
-					.style("position", "relative")
-					.style("bottom", "40px")
-					.text(element.attr("caption"));	
     });
     //senate girls
      d3.xml("svg/senateGirls.svg", function(xml) {
@@ -109,16 +108,10 @@
                 // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
                 var element = d3.select("#senateG");
                 
-                element.insert("div",":first-child")
+                         element.insert("div",":first-child")
 					.style("position", "relative")
 					.style("top", "20px")
-					.style("text-transform", "uppercase")
-					.text(element.attr("title"));
-					
-                element.append("div")
-					.style("position", "relative")
-					.style("bottom", "40px")
-					.text(element.attr("caption"));	
+					.style("justify-content", "center");
     });
     //senate boys
      d3.xml("svg/senateBoys.svg", function(xml) {
@@ -129,16 +122,10 @@
                 // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
                 var element = d3.select("#senateB");
                 
-                element.insert("div",":first-child")
+                        element.insert("div",":first-child")
 					.style("position", "relative")
 					.style("top", "20px")
-					.style("text-transform", "uppercase")
-					.text(element.attr("title"));
-					
-                element.append("div")
-					.style("position", "relative")
-					.style("bottom", "40px")
-					.text(element.attr("caption"));	
+					.style("justify-content", "center");
     });
     d3.xml("svg/thesisfull.svg", function(xml) {
 			    var destination = document.getElementById("full");
@@ -147,8 +134,13 @@
 
                 // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
                 var element = d3.select("#full");
-     
+                         element.insert("div",":first-child")
+					.style("position", "relative")
+					.style("top", "20px")
+					.style("justify-content", "center");
+    });
 </script>
+
 	<div id="everything">
 		<div id="stat">
 		</div>
