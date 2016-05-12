@@ -16,26 +16,27 @@
 		font-family: Avenir;
 		color: Gray;
 	    width: 100%;
-	    position: absolute;
-	    top: 25%;
+	    position: relative;
+	    z-index: -1;
+	   
 
 	   
 	}
 #stat {
 	position: fixed;
 	width: 100%;
-	z-index: -1;
+z-index: 1;
 
 
 }
 #key {
 	position:relative;
 	width: 100%;
+	top: 30%;
 }
 #senate{
 	float: left;
 	left:25%;
-	top: 25%;
 }
 #senateW{
 	width: 550px;
@@ -152,9 +153,8 @@ overflow: hidden;
                 var element = d3.select("#full");
                          element.insert("div",":first-child")
 					.style("position", "relative")
-					.style("top", "20px")
-					.style("justify-content", "center");
-    });
+					.style("top", "20px");
+		    });
 </script>
 <div id="stat" >
 		</div>
