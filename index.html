@@ -17,27 +17,43 @@
 		color: Gray;
 	    width: 100%;
 	    position: absolute;
-	justify-content: center;
+	    top: 25%;
+
 	   
 	}
 #stat {
-	position:relative;
+	position: fixed;
 	width: 100%;
-	justify-content: center;
+	z-index: -1;
+
 
 }
 #key {
 	position:relative;
 	width: 100%;
-	justify-content: center;
+}
+#senate{
+	float: left;
+	left:25%;
+	top: 25%;
+}
+#senateW{
+	width: 550px;
+	margin-left:25px;
+overflow: hidden;
+}
+#senateM{
+	width: 550px;
+		margin-left:25px;
+overflow: hidden;
 }
 
 	/*CSS rollover applied to SVG*/
 
 
-	/*svg, img {*/
-	/*	padding: 1%;*/
-	/*}*/
+	svg, img {
+		width:100%;
+	}
 
 </style>
 </head>
@@ -74,8 +90,8 @@
                 var element = d3.select("#senateW");
                 
                 element.insert("div",":first-child")
-					.style("position", "relative")
-					.style("justify-content", "center");
+					.style("position", "relative");
+					
 					// .style("top", "20px")
 					// .text(element.attr("title"));
 					
@@ -96,7 +112,7 @@
                 element.insert("div",":first-child")
 					.style("position", "relative")
 					.style("top", "20px")
-					.style("justify-content", "center");
+		
 					
     });
     //senate girls
@@ -140,15 +156,15 @@
 					.style("justify-content", "center");
     });
 </script>
-
-	<div id="everything">
-		<div id="stat">
+<div id="stat" >
 		</div>
+	<div id="everything">
+		
 		<div id="key">
 			</div>
 		<div id="senate">
 				<!--	<h2> SENATE </h2> -->
-<div id ="senateW">
+<div id ="senateW"> 
 </div>
 <div id = "senateM">
 </div>
@@ -156,6 +172,7 @@
 </div>
 <div id="senateB">
 	
+</div>
 </div>
 <div id ="full">
 	
