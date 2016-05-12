@@ -1,359 +1,194 @@
 <!DOCTYPE html>
 <html>
 <head>
+     <script src="http://d3js.org/d3.v3.min.js">
+    
+     	
+     	
+     </script>
+     
 <style>
 	body {
 	    background-color: #FFFFFF;
 	}
 
-	#container {
-		font-family: sans-serif;
-	    width: 50%;
+	#everything {
+		font-family: Avenir;
+		color: Gray;
+	    width: 100%;
 	    position: absolute;
-	    left: 25%;
 	}
+#stat {
+	position:relative;
+	width: 100%;
+
+}
+#key {
+	position:relative;
+	width: 100%;
+}
 
 	/*CSS rollover applied to SVG*/
-	#Layer_1
-  	{
-    	opacity: 0;
-    }
 
-	#Layer_1:hover
-  	{
-    	opacity: 1;
-    }
-
-	#Layer_2:hover {
-	    opacity: 0.5;
-	}
-	 
-	#Layer_3:hover {
-	    opacity: 0;
-	}
 
 	svg, img {
-		padding: 10%;
+		padding: 1%;
 	}
 
 </style>
 </head>
 <body>
+    
+<script>
+//header
+ d3.xml("svg/oneStatHeader.svg", function(xml) {
+			    var destination = document.getElementById("stat");
+			    destination.appendChild(xml.documentElement);
+			  
 
+                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+                var element = d3.select("#stat");
+                
+    });
+    //key
+     d3.xml("svg/key.svg", function(xml) {
+			    var destination = document.getElementById("key");
+			    destination.appendChild(xml.documentElement);
+			  
+
+                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+                var element = d3.select("#key");
+                
+    });
+//senate women
+    d3.xml("svg/senateWomen.svg", function(xml) {
+			    var destination = document.getElementById("senateW");
+			    destination.appendChild(xml.documentElement);
+			  
+
+                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+                var element = d3.select("#senateW");
+                
+                element.insert("div",":first-child")
+					.style("position", "relative")
+					.style("top", "20px")
+					.style("text-transform", "uppercase")
+					.text(element.attr("title"));
+					
+                element.append("div")
+					.style("position", "relative")
+					.style("bottom", "40px")
+					.text(element.attr("caption"));	
+    });
+    //sentate Men
+     d3.xml("svg/senateMen.svg", function(xml) {
+			    var destination = document.getElementById("senateM");
+			    destination.appendChild(xml.documentElement);
+			  
+
+                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+                var element = d3.select("#senateM");
+                
+                element.insert("div",":first-child")
+					.style("position", "relative")
+					.style("top", "20px")
+					.style("text-transform", "uppercase")
+					.text(element.attr("title"));
+					
+                element.append("div")
+					.style("position", "relative")
+					.style("bottom", "40px")
+					.text(element.attr("caption"));	
+    });
+    //senate girls
+     d3.xml("svg/senateGirls.svg", function(xml) {
+			    var destination = document.getElementById("senateG");
+			    destination.appendChild(xml.documentElement);
+			  
+
+                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+                var element = d3.select("#senateG");
+                
+                element.insert("div",":first-child")
+					.style("position", "relative")
+					.style("top", "20px")
+					.style("text-transform", "uppercase")
+					.text(element.attr("title"));
+					
+                element.append("div")
+					.style("position", "relative")
+					.style("bottom", "40px")
+					.text(element.attr("caption"));	
+    });
+    //senate boys
+     d3.xml("svg/senateBoys.svg", function(xml) {
+			    var destination = document.getElementById("senateB");
+			    destination.appendChild(xml.documentElement);
+			  
+
+                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+                var element = d3.select("#senateB");
+                
+                element.insert("div",":first-child")
+					.style("position", "relative")
+					.style("top", "20px")
+					.style("text-transform", "uppercase")
+					.text(element.attr("title"));
+					
+                element.append("div")
+					.style("position", "relative")
+					.style("bottom", "40px")
+					.text(element.attr("caption"));	
+    });
+    d3.xml("svg/thesisfull.svg", function(xml) {
+			    var destination = document.getElementById("full");
+			    destination.appendChild(xml.documentElement);
+			  
+
+                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+                var element = d3.select("#full");
+     
+</script>
 	<div id="everything">
 		<div id="stat">
 		</div>
 		<div id="key">
 			</div>
 		<div id="senate">
-					<h2> SENATE </h2>
-<div id ="sentateW">
-				<!--Women Senate SVG-->
-					<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="792px"
-	 height="612px" viewBox="0 0 792 612" enable-background="new 0 0 792 612" xml:space="preserve">
-<g id="Senate_Percent">
-	<g>
-		<rect x="186.987" y="214.845" fill="#FFF1E2" width="182.684" height="182.682"/>
-		<rect x="186.987" y="362.815" opacity="0.5" fill="#767C6D" width="182.684" height="34.711"/>
-	</g>
-	<g>
-		<rect x="411.316" y="214.06" fill="#E3EFE5" width="182.684" height="182.682"/>
-		<rect x="411.313" y="214.06" opacity="0.5" fill="#767C6D" width="182.688" height="147.971"/>
-	</g>
-</g>
-<g id="Senate_Women_WL">
-	
-		<rect x="186.987" y="376.72" fill="none" stroke="#6DB7A1" stroke-width="4" stroke-miterlimit="10" width="182.684" height="20.092"/>
-	
-		<rect x="186.987" y="233.368" fill="none" stroke="#BCD6C4" stroke-width="4" stroke-miterlimit="10" width="182.684" height="138.838"/>
-</g>
-<g id="Senate_Women_ML">
-	
-		<rect x="410.974" y="212.224" fill="none" stroke="#6DB7A1" stroke-width="4" stroke-miterlimit="10" width="182.684" height="21.922"/>
-	
-		<rect x="410.974" y="238.04" fill="none" stroke="#BCD6C4" stroke-width="4" stroke-miterlimit="10" width="182.684" height="138.838"/>
-</g>
-<g id="Senate_Women_Text">
-	<g>
-		<path fill="#6DB7A1" d="M152.576,339.997l-25.893,6.635v-3.57l13.102-3.105c3.223-0.773,6.451-1.473,8.947-1.938v-0.078
-			c-2.572-0.426-5.646-1.242-8.988-2.133l-13.061-3.492v-3.531l13.137-3.18c3.076-0.738,6.148-1.438,8.877-1.824v-0.076
-			c-2.842-0.545-5.725-1.281-8.953-2.096l-13.061-3.453v-3.453l25.893,7.412v3.529l-13.482,3.297
-			c-3.305,0.816-5.842,1.359-8.455,1.707v0.076c2.574,0.467,5.111,1.049,8.455,2.02l13.482,3.725V339.997z"/>
-		<path fill="#6DB7A1" d="M139.363,289.108c8.908,0,13.637,5.471,13.637,12.141c0,6.906-5.303,11.756-13.139,11.756
-			c-8.221,0-13.6-5.158-13.6-12.143C126.262,293.726,131.676,289.108,139.363,289.108z M139.785,309.397
-			c5.531,0,10.488-3.027,10.488-8.342c0-5.354-4.881-8.377-10.758-8.377c-5.15,0-10.527,2.713-10.527,8.34
-			C128.988,306.604,134.096,309.397,139.785,309.397z"/>
-		<path fill="#6DB7A1" d="M141.205,262.698c-3.611,0.193-7.953,0.426-11.182,0.389v0.117c3.035,0.893,6.264,1.977,9.838,3.295
-			l12.563,4.617v2.561l-12.334,4.229c-3.65,1.242-6.994,2.289-10.066,3.027v0.076c3.229,0.078,7.57,0.273,11.451,0.506l11.102,0.697
-			v3.219l-25.893-1.822v-4.307l12.523-4.463c3.188-1.086,6.033-1.977,8.723-2.635v-0.115c-2.613-0.664-5.459-1.592-8.723-2.758
-			l-12.523-4.654v-4.305l25.893-1.631v3.297L141.205,262.698z"/>
-		<path fill="#6DB7A1" d="M140.436,240.013v10.164h9.336v-11.324h2.805v14.699h-25.893v-14.119h2.803v10.744h8.184v-10.164H140.436z
-			"/>
-		<path fill="#6DB7A1" d="M152.576,234.472h-25.893v-3.686l13.102-8.381c3.035-1.938,5.76-3.449,8.41-4.691l-0.037-0.078
-			c-3.457,0.309-6.607,0.387-10.641,0.387h-10.834v-3.178h25.893v3.412l-13.137,8.303c-2.883,1.822-5.842,3.568-8.646,4.885
-			l0.039,0.119c3.264-0.195,6.377-0.273,10.682-0.273h11.063V234.472z"/>
-	</g>
-</g>
-<g id="Senate_Women_WL_Stat">
-	<rect x="189.489" y="220.567" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 189.4893 231.1504)" fill="#BCD6C4" font-family="'AvenirLTStd-Black'" font-size="14">74% No Preference</text>
-	<rect x="189.489" y="362.815" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 189.4893 373.3975)" fill="#6DB7A1" font-family="'AvenirLTStd-Black'" font-size="14">7% Prefer Women</text>
-</g>
-<g id="Senate_Women_ML_Stat">
-	<rect x="413.132" y="221.331" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 413.1309 231.9146)" fill="#6DB7A1" font-family="'AvenirLTStd-Black'" font-size="14">17% Prefer Men</text>
-	<rect x="413.132" y="362.815" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 413.1309 373.3984)" fill="#BCD6C4" font-family="'AvenirLTStd-Black'" font-size="14">74% No Preference</text>
-</g>
-<g id="Senate_W_Stat">
-	<rect x="192.485" y="348.063" fill="none" width="171.688" height="20.938"/>
-	
-		<text transform="matrix(1 0 0 1 192.4854 361.6709)" opacity="0.5" fill="#767C6D" font-family="'AvenirLTStd-Black'" font-size="18">Senate Women </text>
-</g>
-<g id="Senate_M_Stat">
-	<rect x="430.48" y="348.063" fill="none" width="144.352" height="20.938"/>
-	<text transform="matrix(1 0 0 1 430.4805 361.6699)" fill="#F1F2F2" font-family="'AvenirLTStd-Black'" font-size="18">Senate Men 20%</text>
-</g>
-</svg>
+				<!--	<h2> SENATE </h2> -->
+<div id ="senateW">
 </div>
 <div id = "senateM">
-<!--Men Senate SVG-->
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="792px"
-	 height="612px" viewBox="0 0 792 612" enable-background="new 0 0 792 612" xml:space="preserve">
-<g id="Senate_Percent">
-	<g>
-		<rect x="186.987" y="194.346" fill="#FFF1E2" width="182.684" height="182.681"/>
-		<rect x="186.987" y="342.316" opacity="0.5" fill="#767C6D" width="182.684" height="34.711"/>
-	</g>
-	<g>
-		<rect x="411.316" y="193.561" fill="#E3EFE5" width="182.684" height="182.681"/>
-		<rect x="411.313" y="193.561" opacity="0.5" fill="#767C6D" width="182.688" height="147.97"/>
-	</g>
-</g>
-<g id="Senate_Men_WL">
-	
-		<rect x="186.987" y="366.057" fill="none" stroke="#F0895A" stroke-width="4" stroke-miterlimit="10" width="182.684" height="12.787"/>
-	
-		<rect x="186.987" y="227.745" fill="none" stroke="#EECAB2" stroke-width="4" stroke-miterlimit="10" width="182.684" height="135.185"/>
-</g>
-<g id="Senate_Men_ML">
-	
-		<rect x="411.316" y="193.561" fill="none" stroke="#F0895A" stroke-width="4" stroke-miterlimit="10" width="182.684" height="31.057"/>
-	
-		<rect x="411.316" y="227.745" fill="none" stroke="#EECAB2" stroke-width="4" stroke-miterlimit="10" width="182.684" height="135.185"/>
-</g>
-<g id="Senate_Men_Text">
-	<g>
-		<path fill="#F0895A" d="M141.127,240.304c-3.609,0.193-7.951,0.428-11.174,0.389v0.117c3.029,0.893,6.258,1.979,9.832,3.297
-			l12.561,4.617v2.561l-12.332,4.23c-3.65,1.24-6.992,2.289-10.061,3.023v0.078c3.223,0.078,7.564,0.273,11.443,0.504l11.104,0.697
-			v3.221l-25.893-1.824v-4.303l12.521-4.463c3.189-1.086,6.035-1.979,8.721-2.637v-0.117c-2.609-0.662-5.451-1.592-8.721-2.756
-			l-12.521-4.654v-4.307l25.893-1.629v3.299L141.127,240.304z"/>
-		<path fill="#F0895A" d="M140.359,217.621v10.166h9.334v-11.328h2.807v14.703h-25.893v-14.123h2.807v10.748h8.18v-10.166H140.359z"
-			/>
-		<path fill="#F0895A" d="M152.5,212.078h-25.893v-3.684l13.102-8.379c3.035-1.939,5.76-3.453,8.41-4.695l-0.037-0.074
-			c-3.457,0.309-6.609,0.387-10.641,0.387h-10.834v-3.182H152.5v3.412l-13.139,8.303c-2.881,1.822-5.844,3.568-8.645,4.889
-			l0.039,0.115c3.264-0.195,6.379-0.27,10.68-0.27H152.5V212.078z"/>
-	</g>
-</g>
-<g id="Senate_Men_WL_Stat">
-	<rect x="190.987" y="214.149" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 190.9873 224.7324)" fill="#EECAB2" font-family="'AvenirLTStd-Black'" font-size="14">74% No Preference</text>
-	<rect x="190.987" y="353.37" fill="none" width="174.684" height="37.135"/>
-	<text transform="matrix(1 0 0 1 190.9873 363.9541)" fill="#F0895A" font-family="'AvenirLTStd-Black'" font-size="14">7% Prefer Women</text>
-</g>
-<g id="Senate_Men_ML_Stat">
-	<rect x="410.316" y="212.078" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 410.3164 222.6616)" fill="#F0895A" font-family="'AvenirLTStd-Black'" font-size="14">17% Prefer Men</text>
-	<rect x="414" y="351" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 414 361.584)" fill="#EECAB2" font-family="'AvenirLTStd-Black'" font-size="14">74% No Preference</text>
-</g>
-<g id="Senate_W_Stat">
-	<rect x="190.987" y="327.333" fill="none" width="174.684" height="20.938"/>
-	
-		<text transform="matrix(1 0 0 1 190.9873 340.9414)" opacity="0.5" fill="#767C6D" font-family="'AvenirLTStd-Black'" font-size="18">Senate Women 20%</text>
-</g>
-<g id="Senate_M_Stat">
-	<rect x="430.48" y="327.333" fill="none" width="144.352" height="20.938"/>
-	<text transform="matrix(1 0 0 1 430.4805 340.9414)" fill="#F1F2F2" font-family="'AvenirLTStd-Black'" font-size="18">Senate Men 20%</text>
-</g>
-</svg>
 </div>
 <div id= "senateG">
-
-<!--Girls Senate SVG-->
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="792px"
-	 height="612px" viewBox="0 0 792 612" enable-background="new 0 0 792 612" xml:space="preserve">
-<g id="Senate_Percent">
-	<g>
-		<rect x="186.987" y="214.845" fill="#FFF1E2" width="182.684" height="182.682"/>
-		<rect x="186.987" y="362.815" opacity="0.5" fill="#767C6D" width="182.684" height="34.711"/>
-	</g>
-	<g>
-		<rect x="411.316" y="214.06" fill="#E3EFE5" width="182.684" height="182.682"/>
-		<rect x="411.313" y="214.06" opacity="0.5" fill="#767C6D" width="182.688" height="147.971"/>
-	</g>
-</g>
-<g id="Senate_Girls_WL">
-	
-		<rect x="186.987" y="252" fill="none" stroke="#BCD6C4" stroke-width="4" stroke-miterlimit="10" width="182.684" height="126.053"/>
-	
-		<rect x="186.987" y="382.689" fill="none" stroke="#6DB7A1" stroke-width="4" stroke-miterlimit="10" width="182.684" height="14.613"/>
-</g>
-<g id="Senate_Girls_ML">
-	
-		<rect x="411.316" y="211.985" fill="none" stroke="#6DB7A1" stroke-width="4" stroke-miterlimit="10" width="182.684" height="42.016"/>
-	
-		<rect x="411.314" y="257.7" fill="none" stroke="#BCD6C4" stroke-width="4" stroke-miterlimit="10" width="182.684" height="126.053"/>
-</g>
-<g id="Senate_Girls_Text">
-	<g>
-		<path fill="#6DB7A1" d="M151.461,284.549c0.539,1.514,1.422,4.5,1.422,8.033c0,3.955-1,7.213-3.418,9.773
-			c-2.152,2.25-5.609,3.645-9.641,3.645c-7.723-0.035-13.373-5.391-13.373-14.16c0-3.025,0.654-5.391,1.189-6.516l2.73,0.816
-			c-0.615,1.396-1.113,3.143-1.113,5.779c0,6.363,3.92,10.512,10.412,10.512c6.568,0,10.447-3.994,10.447-10.084
-			c0-2.209-0.309-3.727-0.691-4.5h-7.719v5.314h-2.693v-8.613H151.461z"/>
-		<path fill="#6DB7A1" d="M126.721,276.023h25.893v3.375h-25.893V276.023z"/>
-		<path fill="#6DB7A1" d="M127.066,270.129c-0.346-1.707-0.539-4.152-0.539-6.477c0-3.609,0.656-5.938,2.115-7.566
-			c1.154-1.318,2.92-2.057,4.92-2.057c3.418,0,5.684,2.172,6.605,4.928h0.113c0.691-2.018,2.541-3.223,5.225-3.84
-			c3.611-0.855,6.111-1.475,7.107-2.02v3.492c-0.73,0.428-2.953,1.01-6.184,1.746c-3.572,0.773-4.918,2.172-5.035,5.238v3.178
-			h11.219v3.377H127.066z M138.861,266.752v-3.451c0-3.607-1.959-5.895-4.916-5.895c-3.346,0-4.801,2.441-4.844,6.012
-			c0,1.629,0.156,2.791,0.313,3.334H138.861z"/>
-		<path fill="#6DB7A1" d="M126.721,249.264v-3.375h23.088v-11.174h2.805v14.549H126.721z"/>
-		<path fill="#6DB7A1" d="M148.541,231.426c0.924-1.514,1.693-3.725,1.693-6.053c0-3.451-1.805-5.471-4.418-5.471
-			c-2.42,0-3.805,1.398-5.148,4.93c-1.496,4.266-3.688,6.902-7.338,6.902c-4.033,0-7.031-3.375-7.031-8.457
-			c0-2.676,0.615-4.615,1.268-5.779l2.729,0.932c-0.463,0.854-1.23,2.6-1.23,4.967c0,3.568,2.115,4.926,3.881,4.926
-			c2.418,0,3.613-1.592,4.992-5.201c1.691-4.422,3.807-6.67,7.605-6.67c3.996,0,7.457,2.986,7.457,9.154
-			c0,2.523-0.73,5.275-1.656,6.674L148.541,231.426z"/>
-	</g>
-</g>
-<g id="Senate_Girls_WL_Stat">
-	<rect x="189" y="240.063" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 189 250.646)" fill="#BCD6C4" font-family="'AvenirLTStd-Black'" font-size="14">69% No Preference</text>
-	<rect x="189" y="369" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 189 379.582)" fill="#6DB7A1" font-family="'AvenirLTStd-Black'" font-size="14">8% Prefer Women</text>
-</g>
-<g id="Senate_Girls_ML_Stat">
-	<rect x="414" y="243" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 413.999 253.584)" fill="#6DB7A1" font-family="'AvenirLTStd-Black'" font-size="14">23% Prefer Men</text>
-	<rect x="414" y="369" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 413.999 379.584)" fill="#BCD6C4" font-family="'AvenirLTStd-Black'" font-size="14">69% No Preference</text>
-</g>
-<g id="Senate_W_Stat">
-	<rect x="192.485" y="348.063" fill="none" width="171.688" height="20.938"/>
-	
-		<text transform="matrix(1 0 0 1 192.4854 361.6709)" opacity="0.5" fill="#767C6D" font-family="'AvenirLTStd-Black'" font-size="18">Senate Women </text>
-</g>
-<g id="Senate_M_Stat">
-	<rect x="430.48" y="348.063" fill="none" width="144.352" height="20.938"/>
-	<text transform="matrix(1 0 0 1 430.4805 361.6699)" fill="#F1F2F2" font-family="'AvenirLTStd-Black'" font-size="18">Senate Men 20%</text>
-</g>
-</svg>
 </div>
-<div id = "senateB">
-
-
-<!--Boys Senate SVG-->
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="792px"
-	 height="612px" viewBox="0 0 792 612" enable-background="new 0 0 792 612" xml:space="preserve">
-<g id="Senate_Percent">
-	<g>
-		<rect x="186.987" y="194.346" fill="#FFF1E2" width="182.684" height="182.681"/>
-		<rect x="186.987" y="342.316" opacity="0.5" fill="#767C6D" width="182.684" height="34.711"/>
-	</g>
-	<g>
-		<rect x="411.316" y="191.001" fill="#E3EFE5" width="182.684" height="185.241"/>
-		<rect x="411.313" y="191.001" opacity="0.5" fill="#767C6D" width="182.688" height="150.044"/>
-	</g>
-</g>
-<g id="Senate_Boys_WL">
-	<rect x="186.987" y="369" fill="none" stroke="#F0895A" stroke-width="4" stroke-miterlimit="10" width="182.684" height="7.305"/>
+<div id="senateB">
 	
-		<rect x="186.987" y="264.073" fill="none" stroke="#EECAB2" stroke-width="4" stroke-miterlimit="10" width="182.684" height="102.301"/>
-</g>
-<g id="Senate_Boys_ML">
-	
-		<rect x="411.314" y="266.698" fill="none" stroke="#EECAB2" stroke-width="4" stroke-miterlimit="10" width="182.684" height="102.302"/>
-	
-		<rect x="411.314" y="191.001" fill="none" stroke="#F0895A" stroke-width="4" stroke-miterlimit="10" width="182.684" height="73.072"/>
-</g>
-<g id="Senate_Boys_Text">
-	<g>
-		<path fill="#F0895A" d="M126.771,279c-0.311-1.475-0.539-3.801-0.539-6.166c0-3.375,0.576-5.549,1.885-7.176
-			c0.998-1.357,2.533-2.174,4.57-2.174c2.498,0,4.688,1.668,5.686,4.422h0.08c0.611-2.482,2.648-5.391,6.492-5.391
-			c2.227,0,3.916,0.893,5.184,2.209c1.652,1.826,2.422,4.771,2.422,9.039c0,2.328-0.152,4.111-0.309,5.236H126.771z
-			 M137.375,275.627v-3.064c0-3.57-1.844-5.664-4.344-5.664c-3.031,0-4.227,2.328-4.227,5.742c0,1.551,0.117,2.443,0.234,2.986
-			H137.375z M149.785,275.627c0.113-0.658,0.154-1.631,0.154-2.832c0-3.49-1.268-6.711-5.037-6.711c-3.531,0-4.992,3.064-4.992,6.75
-			v2.793H149.785z"/>
-		<path fill="#F0895A" d="M139.102,235.637c8.916,0,13.641,5.471,13.641,12.143c0,6.904-5.301,11.756-13.139,11.756
-			c-8.225,0-13.604-5.162-13.604-12.145C126,240.254,131.418,235.637,139.102,235.637z M139.527,255.926
-			c5.531,0,10.488-3.025,10.488-8.342c0-5.352-4.881-8.377-10.758-8.377c-5.15,0-10.527,2.715-10.527,8.34
-			C128.73,253.133,133.838,255.926,139.527,255.926z"/>
-		<path fill="#F0895A" d="M152.32,226.527h-10.988l-14.906,8.266v-3.844l7.143-3.686c1.963-1.01,3.539-1.783,5.344-2.598v-0.078
-			c-1.693-0.736-3.381-1.629-5.344-2.639l-7.143-3.762v-3.84l14.867,8.766h11.027V226.527z"/>
-		<path fill="#F0895A" d="M148.246,212.336c0.926-1.514,1.693-3.725,1.693-6.051c0-3.453-1.807-5.473-4.418-5.473
-			c-2.42,0-3.807,1.398-5.15,4.926c-1.5,4.27-3.688,6.906-7.34,6.906c-4.033,0-7.031-3.375-7.031-8.457
-			c0-2.676,0.617-4.615,1.27-5.779l2.73,0.93c-0.463,0.854-1.23,2.602-1.23,4.967c0,3.568,2.113,4.928,3.879,4.928
-			c2.42,0,3.613-1.592,4.996-5.197c1.689-4.422,3.805-6.674,7.607-6.674c3.994,0,7.451,2.988,7.451,9.156
-			c0,2.521-0.727,5.275-1.652,6.67L148.246,212.336z"/>
-	</g>
-</g>
-<g id="Senate_Boys_WL_Stat">
-	<rect x="186.477" y="252.57" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 186.4771 263.1533)" fill="#EECAB2" font-family="'AvenirLTStd-Black'" font-size="14">56% No Preference</text>
-	<rect x="188.987" y="358.531" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 188.9873 369.1143)" fill="#F0895A" font-family="'AvenirLTStd-Black'" font-size="14">4% Prefer Women</text>
-</g>
-<g id="Senate_Boys_ML_Stat">
-	<rect x="414" y="250.578" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 414 261.1616)" fill="#F0895A" font-family="'AvenirLTStd-Black'" font-size="14">40% Prefer Men</text>
-	<rect x="414" y="355.305" fill="none" width="174.684" height="20.938"/>
-	<text transform="matrix(1 0 0 1 414 365.8887)" fill="#EECAB2" font-family="'AvenirLTStd-Black'" font-size="14">56% No Preference</text>
-</g>
-<g id="Senate_W_Stat">
-	<rect x="190.987" y="327.333" fill="none" width="174.684" height="20.938"/>
-	
-		<text transform="matrix(1 0 0 1 190.9873 340.9414)" opacity="0.5" fill="#767C6D" font-family="'AvenirLTStd-Black'" font-size="18">Senate Women 20%</text>
-</g>
-<g id="Senate_M_Stat">
-	<rect x="430.48" y="327.333" fill="none" width="144.352" height="20.938"/>
-	<text transform="matrix(1 0 0 1 430.4805 340.9414)" fill="#F1F2F2" font-family="'AvenirLTStd-Black'" font-size="18">Senate Men 20%</text>
-</g>
-</svg>
 </div>
+<div id ="full">
+	
 </div>
 
 		<div id="house">
-			<h2> HOUSE OF REPRESENTATIVES </h2></div>
+		<!--	<h2> HOUSE OF REPRESENTATIVES </h2></div> -->
 			</div>
 		<div id="stateleg">
-			<h2> STATE LEGISLATORS </h2>
+			<!--<h2> STATE LEGISLATORS </h2>-->
 			</div>
 		<div id="gov">
-			<h2> GOVENORS </h2>
+		<!--	<h2> GOVENORS </h2> -->
 			</div>
 		<div id="fedjudge">
-			<h2> US FEDERAL COURT JUDGES </h2>
+			<!--	<h2> US FEDERAL COURT JUDGES </h2> -->
 			</div>
 		<div id="statejudge">
-			<h2> US STATE COURT JUDGES </h2>
+			<!--	<h2> US STATE COURT JUDGES </h2> -->
 			</div>
 
 		<div id="information">
 			</div>
 
-		<img src="rollover.svg" alt="hover" />
+
 	</div>
 
 </body>
