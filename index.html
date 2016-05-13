@@ -1,205 +1,207 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-     <script src="http://d3js.org/d3.v3.min.js">
-    
-     	
-     	
-     </script>
-     
-<style>
-	body {
-	    background-color: #FFFFFF;
-	}
+	<!-- loading d3 -->
+	<script src="http://d3js.org/d3.v3.min.js">
+	
+	</script>
 
-	#everything {
-		font-family: Avenir;
-		color: Gray;
-	    width: 100%;
-	    position: absolute;
-	    z-index: -1;
-	   
-
-	   
-	}
-#stat {
-	position: fixed;
-	width: 100%;
-z-index: 1;
-
-
-
-}
-#key {
-	top: 50px;
-	position:relative;
-	width: 100%;
-}
-#senate{
-	float: left;
-	left:25%;
-}
-#senateW{
-	width: 550px;
-	margin-left:25px;
-overflow: hidden;
-}
-#senateM{
-	width: 550px;
-		margin-left:25px;
-overflow: hidden;
-}
-
-	/*CSS rollover applied to SVG*/
-
-
-	svg, img {
-		width:100%;
-	}
-
-</style>
+	<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+	<style>
+		backgorund body {
+			background-color: #FFFFFF;
+		}
+		
+		#everything {
+			font-family: 'Muli', sans-serif;
+			font-size: 24px;
+			color: Gray;
+			width: 100%;
+			position: absolute;
+			z-index: -1;
+		}
+		
+		#stat {
+			position: fixed;
+			width: 100%;
+			z-index: 1;
+		}
+		
+		#key {
+			position: relative;
+			width: 100%;
+			top: 175px;
+		}
+		
+		#senate {
+			float: left;
+			left: 25%;
+			top: 175px;
+			position: relative;
+		}
+		
+		#senateW {
+			width: 550px;
+			margin-left: 25px;
+			overflow: hidden;
+		}
+		
+		#senateM {
+			width: 550px;
+			margin-left: 25px;
+			overflow: hidden;
+		}
+		/*CSS rollover applied to SVG*/
+		
+		svg,
+		img {
+			width: 100%;
+		}
+	</style>
 </head>
 <body>
-    
-<script>
-//header
- d3.xml("svg/oneStatHeader.svg", function(xml) {
-			    var destination = document.getElementById("stat");
-			    destination.appendChild(xml.documentElement);
-			  
 
-                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
-                var element = d3.select("#stat");
-                
-    });
-    //key
-     d3.xml("svg/key.svg", function(xml) {
-			    var destination = document.getElementById("key");
-			    destination.appendChild(xml.documentElement);
-			  
+	<script>
+		//header
+		d3.xml("svg/oneStatHeader.svg", function(xml) {
+			var destination = document.getElementById("stat");
+			destination.appendChild(xml.documentElement);
 
-                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
-                var element = d3.select("#key");
-                
-    });
-//senate women
-    d3.xml("svg/senateWomen.svg", function(xml) {
-			    var destination = document.getElementById("senateW");
-			    destination.appendChild(xml.documentElement);
-			  
+			//annotation work pulled from the attributes of our destination element
+			var element = d3.select("#stat");
 
-                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
-                var element = d3.select("#senateW");
-                
-                element.insert("div",":first-child")
-					.style("position", "relative");
-					
-					// .style("top", "20px")
-					// .text(element.attr("title"));
-					
-     //           element.append("div")
-					// .style("position", "relative")
-					// .style("bottom", "40px")
-					// .text(element.attr("caption"));	
-    });
-    //sentate Men
-     d3.xml("svg/senateMen.svg", function(xml) {
-			    var destination = document.getElementById("senateM");
-			    destination.appendChild(xml.documentElement);
-			  
-
-                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
-                var element = d3.select("#senateM");
-                
-                element.insert("div",":first-child")
-					.style("position", "relative")
-					.style("top", "20px")
+		});
 		
-					
-    });
-    //senate girls
-     d3.xml("svg/senateGirls.svg", function(xml) {
-			    var destination = document.getElementById("senateG");
-			    destination.appendChild(xml.documentElement);
-			  
+		//key
+		d3.xml("svg/key.svg", function(xml) {
+			var destination = document.getElementById("key");
+			destination.appendChild(xml.documentElement);
 
-                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
-                var element = d3.select("#senateG");
-                
-                         element.insert("div",":first-child")
-					.style("position", "relative")
-					.style("top", "20px")
-					.style("justify-content", "center");
-    });
-    //senate boys
-     d3.xml("svg/senateBoys.svg", function(xml) {
-			    var destination = document.getElementById("senateB");
-			    destination.appendChild(xml.documentElement);
-			  
 
-                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
-                var element = d3.select("#senateB");
-                
-                        element.insert("div",":first-child")
-					.style("position", "relative")
-					.style("top", "20px")
-					.style("justify-content", "center");
-    });
-    d3.xml("svg/thesisfull.svg", function(xml) {
-			    var destination = document.getElementById("full");
-			    destination.appendChild(xml.documentElement);
-			  
+			// and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+			var element = d3.select("#key");
 
-                // and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
-                var element = d3.select("#full");
-                         element.insert("div",":first-child")
-					.style("position", "relative")
-					.style("top", "20px");
-		    });
-</script>
+		});
+		//senate women
+		d3.xml("svg/senateWomen.svg", function(xml) {
+			var destination = document.getElementById("senateW");
+			destination.appendChild(xml.documentElement);
+
+
+			// and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+			var element = d3.select("#senateW");
+
+			element.insert("div", ":first-child")
+				.style("position", "relative");
+
+			// .style("top", "20px")
+			// .text(element.attr("title"));
+
+			//           element.append("div")
+			// .style("position", "relative")
+			// .style("bottom", "40px")
+			// .text(element.attr("caption"));	
+		});
+		//sentate Men
+		d3.xml("svg/senateMen.svg", function(xml) {
+			var destination = document.getElementById("senateM");
+			destination.appendChild(xml.documentElement);
+
+
+			// and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+			var element = d3.select("#senateM");
+
+			element.insert("div", ":first-child")
+				.style("position", "relative")
+				.style("top", "20px")
+
+
+		});
+		//senate girls
+		d3.xml("svg/senateGirls.svg", function(xml) {
+			var destination = document.getElementById("senateG");
+			destination.appendChild(xml.documentElement);
+
+
+			// and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+			var element = d3.select("#senateG");
+
+			element.insert("div", ":first-child")
+				.style("position", "relative")
+				.style("top", "20px")
+				.style("justify-content", "center");
+		});
+		//senate boys
+		d3.xml("svg/senateBoys.svg", function(xml) {
+			var destination = document.getElementById("senateB");
+			destination.appendChild(xml.documentElement);
+
+
+			// and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+			var element = d3.select("#senateB");
+
+			element.insert("div", ":first-child")
+				.style("position", "relative")
+				.style("top", "20px")
+				.style("justify-content", "center");
+		});
+		d3.xml("svg/thesisfull.svg", function(xml) {
+			var destination = document.getElementById("full");
+			destination.appendChild(xml.documentElement);
+
+
+			// and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+			var element = d3.select("#full");
+			element.insert("div", ":first-child")
+				.style("position", "relative")
+				.style("top", "20px");
+		});
+	</script>
 	<div id="everything">
-<div id="stat" >
+		<div id="stat">
 		</div>
-		
+
 		<div id="key">
-			</div>
+		</div>
 		<div id="senate">
-				<!--	<h2> SENATE </h2> -->
-<div id ="senateW"> 
-</div>
-<div id = "senateM">
-</div>
-<div id= "senateG">
-</div>
-<div id="senateB">
-	
-</div>
-</div>
-<div id ="full">
-	
-</div>
+			<h2> SENATE </h2>
+			<div id="senateW">
+			</div>
+			<div id="senateM">
+			</div>
+			<div id="senateG">
+			</div>
+			<div id="senateB">
+
+			</div>
+		</div>
+		<div id="full">
+
+		</div>
 
 		<div id="house">
-		<!--	<h2> HOUSE OF REPRESENTATIVES </h2></div> -->
-			</div>
+			<!--	<h2> HOUSE OF REPRESENTATIVES </h2></div> -->
+		</div>
 		<div id="stateleg">
 			<!--<h2> STATE LEGISLATORS </h2>-->
-			</div>
+		</div>
 		<div id="gov">
-		<!--	<h2> GOVENORS </h2> -->
-			</div>
+			<!--	<h2> GOVENORS </h2> -->
+		</div>
 		<div id="fedjudge">
 			<!--	<h2> US FEDERAL COURT JUDGES </h2> -->
-			</div>
+		</div>
 		<div id="statejudge">
 			<!--	<h2> US STATE COURT JUDGES </h2> -->
-			</div>
+		</div>
 
 		<div id="information">
-			</div>
+		</div>
 
 
 	</div>
 
 </body>
+
 </html>
