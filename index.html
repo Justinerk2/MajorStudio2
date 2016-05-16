@@ -3,14 +3,14 @@
 <head>
 	<!-- loading d3  in JavaScript-->
 	<script src="http://d3js.org/d3.v3.min.js">
-	
 	</script>
+	<script src = "js/jquery-1.9.1/min.js"></script>
+	<script src = "js/bootstrap.min.js"></script>
 	<!-- loading font Muli-->
 	<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 	<style>
-	
 		backgorund body {
-			background-color: #F1F4F0;
+			background-color: #C1CEBD;
 		}
 		
 		#everything {
@@ -19,22 +19,20 @@
 			width: 100%;
 			position: absolute;
 			z-index: -1;
-			background-color: #F1F4F0;
+			background-color: #C1CEBD;
 		}
 		
 		#stat {
 			position: fixed;
 			width: 100%;
 			z-index: 1;
-	
 		}
 		
-		#key {
-			position: relative;
-			width: 100%;
-			top: 175px;
-		
-		}
+		/*#key {*/
+		/*	position: relative;*/
+		/*	width: 100%;*/
+		/*	top: 200px;*/
+		/*}*/
 		
 		#senate {
 			float: left;
@@ -44,18 +42,18 @@
 		}
 		
 		#senateW {
-
 			position: absolute;
-			width : 50px;
-			
+			width: 50px;
 		}
-			#senateWW {
+		
+		#senateWW {
 			width: 250px;
 			margin-left: 75px;
 			overflow: hidden;
 			position: absolute;
 		}
-			#senateWM {
+		
+		#senateWM {
 			width: 250;
 			margin-left: 300px;
 			overflow: hidden;
@@ -66,49 +64,35 @@
 			width: 550px;
 			margin-left: 25px;
 			overflow: hidden;
-		}
-		#senateWomenMStat {
-			opacity:0;
-		}
-
-		#senateWomenMStat:hover{
-			opacity:1;
-		}
-			#senateWomenWStat {
-			opacity:0;
-		}
-
-		#senateWomenWStat:hover{
-			opacity:1;
+			position: absolute;
+			top:400px;
 		}
 		
-			#senateWomenMLStat {
-			opacity:0;
+			#senateG {
+			width: 550px;
+			margin-left: 25px;
+			overflow: hidden;
+			position: absolute;
+			top:600px;
 		}
-
-		#senateWomenMLStat:hover{
-			opacity:1;
+			#senateB {
+			width: 550px;
+			margin-left: 25px;
+			overflow: hidden;
+			position: absolute;
+			top:800px;
 		}
-		#senateWomenWLStat {
-			opacity:0;
-		}
-
-		#senateWomenWLStat:hover{
-			opacity:1;
-		}
-		
 		#full {
-			top: 175px;
+			top: 1000px;
 		}
-		
 		/*CSS rollover applied to SVG*/
-		
-	/*	svg,
+		/*	svg,
 		img {
 			width: 100%;
 		} */
 	</style>
 </head>
+
 <body>
 
 	<script>
@@ -119,42 +103,39 @@
 			var element = d3.select("#stat");
 
 		});
-		
-		//key
-		d3.xml("svg/key.svg", function(xml) {
-			var destination = document.getElementById("key");
-			destination.appendChild(xml.documentElement);
-			var element = d3.select("#key");
 
-		});
+		//key
+		// d3.xml("svg/key.svg", function(xml) {
+		// 	var destination = document.getElementById("key");
+		// 	destination.appendChild(xml.documentElement);
+		// 	var element = d3.select("#key");
+
+		// });
 		//senate women
 		d3.xml("svg/senateWTitle.svg", function(xml) {
 			var destination = document.getElementById("senateW");
 			destination.appendChild(xml.documentElement);
 			var element = d3.select("#senateW");
+		element.insert("div",":first-child")
+					.style("position", "relative")
+					.style("top", "185px")
+					.style("text-transform", "uppercase")
+					.text(element.attr("title"));
 
 		});
-			d3.xml("svg/senateWomenW.svg", function(xml) {
+		d3.xml("svg/senateWomenW.svg", function(xml) {
 			var destination = document.getElementById("senateWW");
 			destination.appendChild(xml.documentElement);
 			var element = d3.select("#senateWW");
 
 		});
-			d3.xml("svg/senateWomenM.svg", function(xml) {
+		d3.xml("svg/senateWomenM.svg", function(xml) {
 			var destination = document.getElementById("senateWM");
 			destination.appendChild(xml.documentElement);
 			var element = d3.select("#senateWM");
 
 		});
-			
-		
-	
-		element.on("mouseover", function() { 
-					// setting the text of the page headline
-					d3.select("#stat").text(element.attr("title"));
-					// and marking the element we rolled over
-				});
-				
+
 		//sentate Men
 		d3.xml("svg/senateMen.svg", function(xml) {
 			var destination = document.getElementById("senateM");
@@ -207,60 +188,105 @@
 				.style("position", "relative")
 				.style("top", "20px");
 		});
-		
 	</script>
-	
-	<div id="everything">
-		<div id="stat">
-			<div id="senateWTopStat">
-				
-			</div>
-		</div>
 
-		<div id="key">
-		</div>
-		<div id="senate">
-			<h2> SENATE </h2>
-			<div id="senateW">
-			</div>
-			<div id= "senateWW" title = "11% of women prefer a female political leader and 76% have no difference in preference. Women comprise 20% of the Senate">
-			</div>
-			<div id = "senateWM" title = "12% of women prefer a male political leader and 76% have no difference in preference.  Women comprise 20% of the Senate">
-			</div>
-			<div id="senateM">
-			</div>
-			<div id="senateG">
-			</div>
-			<div id="senateB">
-
-			</div>
-		</div>
-		<div id="full">
+<div id="everything">
+	<div id="stat">
+		<div id="senateWTopStat">
 
 		</div>
+	</div>
 
-		<div id="house">
-			<!--	<h2> HOUSE OF REPRESENTATIVES </h2></div> -->
-		</div>
-		<div id="stateleg">
-			<!--<h2> STATE LEGISLATORS </h2>-->
-		</div>
-		<div id="gov">
-			<!--	<h2> GOVENORS </h2> -->
-		</div>
-		<div id="fedjudge">
-			<!--	<h2> US FEDERAL COURT JUDGES </h2> -->
-		</div>
-		<div id="statejudge">
-			<!--	<h2> US STATE COURT JUDGES </h2> -->
-		</div>
+	<div id="key">
+	</div>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<div id="carousel" class+ "carousel slide">
+					<div class="carousel-inner">
 
-		<div id="information">
-		</div>
+						<div class="item">
 
+							<div id="senate" alt="">
+								<h2> SENATE </h2>
+								<div id="senateWo">
+
+									<div id="senateW">
+									</div>
+									<div id="senateWW" title="11% of women prefer a female political leader and 76% have no difference in preference. Women comprise 20% of the Senate">
+									</div>
+									<div id="senateWM" title="12% of women prefer a male political leader and 76% have no difference in preference.  Men comprise 80% of the Senate">
+									</div>
+								</div>
+								<div id="senateMe">
+									<div id="senateM">
+									</div>
+									<div id="senateMW" title="7% of men prefer a female political leader and 74% have no difference in preference. Women comprise 20% of the Senate">
+									</div>
+									<div id="senateMM" title="17% of men prefer a male political leader and 74% have no difference in preference.  Men comprise 80% of the Senate">
+									</div>
+								</div>
+								<div id="senateGi">
+
+									<div id="senateG">
+									</div>
+									<div id="senateGW" title="8% of girls prefer a female political leader and 69% have no difference in preference. Women comprise 20% of the Senate">
+									</div>
+									<div id="senateGM" title="23% of girls prefer a male political leader and 69% have no difference in preference.  Men comprise 80% of the Senate">
+									</div>
+								</div>
+								<div id="senateBo">
+									<div id="senateB">
+									</div>
+									<div id="senateBW" title="4% of boys prefer a female political leader and 56% have no difference in preference. Women comprise 20% of the Senate">
+									</div>
+									<div id="senateBM" title="40% of boys prefer a male political leader and 56% have no difference in preference.  Men comprise 80% of the Senate">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+								<div id="house" alt="">
+									<h2> HOUSE OF REPRESENTATIVES </h2>
+								</div>
+						</div>
+						<div class="item">
+							<div id="stateleg" alt="">
+								<h2> STATE LEGISLATORS </h2>
+							</div>
+						</div>
+						<div class="item">
+
+							<div id="gov" alt="">
+								<h2> GOVENORS </h2>
+							</div>
+						</div>
+						<div class="item">
+							<div id="fedjudge" alt="">
+								<h2> US FEDERAL COURT JUDGES </h2>
+							</div>
+						</div>
+						<div class="item">
+							<div id="statejudge" alt="">
+								<h2> US STATE COURT JUDGES </h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
 
 	</div>
+	<div id="full">
+	</div>
+	<div id="information">
+	</div>
+
+
+</div>
 
 </body>
 
 </html>
+			
