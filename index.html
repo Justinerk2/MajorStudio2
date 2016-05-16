@@ -19,18 +19,21 @@
 			width: 100%;
 			position: absolute;
 			z-index: -1;
+			background-color: #C1CEBD;
 		}
 		
 		#stat {
 			position: fixed;
 			width: 100%;
 			z-index: 1;
+	
 		}
 		
 		#key {
 			position: relative;
 			width: 100%;
 			top: 175px;
+		
 		}
 		
 		#senate {
@@ -42,19 +45,21 @@
 		
 		#senateW {
 
-			position: relative;
+			position: absolute;
+			width : 50px;
+			
 		}
 			#senateWW {
-			width: 550px;
-			margin-left: 25px;
+			width: 250px;
+			margin-left: 75px;
 			overflow: hidden;
-			position: relative;
+			position: absolute;
 		}
 			#senateWM {
-			width: 550px;
-			margin-left: 25px;
+			width: 250;
+			margin-left: 300px;
 			overflow: hidden;
-			position: relative;
+			position: absolute;
 		}
 		
 		#senateM {
@@ -71,10 +76,10 @@
 		
 		/*CSS rollover applied to SVG*/
 		
-		svg,
+	/*	svg,
 		img {
 			width: 100%;
-		}
+		} */
 	</style>
 </head>
 <body>
@@ -149,8 +154,7 @@
 
 			element.insert("div", ":first-child")
 				.style("position", "relative")
-				.style("top", "20px")
-				.style("justify-content", "center");
+				.style("top", "20px");
 		});
 		//senate boys
 		d3.xml("svg/senateBoys.svg", function(xml) {
@@ -164,7 +168,6 @@
 			element.insert("div", ":first-child")
 				.style("position", "relative")
 				.style("top", "20px")
-				.style("justify-content", "center");
 		});
 		d3.xml("svg/thesis.svg", function(xml) {
 			var destination = document.getElementById("full");
@@ -192,10 +195,10 @@
 		<div id="senate">
 			<h2> SENATE </h2>
 			<div id="senateW">
+			</div>
 			<div id= "senateWW" title = "11% of women prefer a female political leader and 76% have no difference in preference. Women comprise 20% of the Senate">
 			</div>
 			<div id = "senateWM" title = "12% of women prefer a male political leader and 76% have no difference in preference.  Women comprise 20% of the Senate">
-			</div>
 			</div>
 			<div id="senateM">
 			</div>
