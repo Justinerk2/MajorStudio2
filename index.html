@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<!-- loading d3 -->
+	<!-- loading d3  in JavaScript-->
 	<script src="http://d3js.org/d3.v3.min.js">
 	
 	</script>
-
+	<!-- loading font Muli-->
 	<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 	<style>
+	
 		backgorund body {
-			background-color: #FFFFFF;
+			background-color: #C1CEBD;
 		}
 		
 		#everything {
 			font-family: 'Muli', sans-serif;
 			font-size: 24px;
-			color: Gray;
 			width: 100%;
 			position: absolute;
 			z-index: -1;
@@ -52,6 +51,9 @@
 			margin-left: 25px;
 			overflow: hidden;
 		}
+		#full {
+			top: 175px;
+		}
 		/*CSS rollover applied to SVG*/
 		
 		svg,
@@ -67,8 +69,6 @@
 		d3.xml("svg/oneStatHeader.svg", function(xml) {
 			var destination = document.getElementById("stat");
 			destination.appendChild(xml.documentElement);
-
-			//annotation work pulled from the attributes of our destination element
 			var element = d3.select("#stat");
 
 		});
@@ -77,9 +77,6 @@
 		d3.xml("svg/key.svg", function(xml) {
 			var destination = document.getElementById("key");
 			destination.appendChild(xml.documentElement);
-
-
-			// and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
 			var element = d3.select("#key");
 
 		});
@@ -87,22 +84,20 @@
 		d3.xml("svg/senateWomen.svg", function(xml) {
 			var destination = document.getElementById("senateW");
 			destination.appendChild(xml.documentElement);
-
-
-			// and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
-			var element = d3.select("#senateW");
-
-			element.insert("div", ":first-child")
-				.style("position", "relative");
-
-			// .style("top", "20px")
-			// .text(element.attr("title"));
-
-			//           element.append("div")
-			// .style("position", "relative")
-			// .style("bottom", "40px")
-			// .text(element.attr("caption"));	
-		});
+			var element = d3.select("#SenateWomenPercentW");
+			element.insert("div",":first-child")
+					.style("position", "relative")
+					.style("top", "20px")
+					.style("text-transform", "uppercase")
+					.text(element.attr("title"));	
+					
+	
+		element.on("mouseover", function() { 
+					// setting the text of the page headline
+					d3.select("#senateWomenPercentW").text(element.attr("title"));
+					// and marking the element we rolled over
+				})
+			});
 		//sentate Men
 		d3.xml("svg/senateMen.svg", function(xml) {
 			var destination = document.getElementById("senateM");
@@ -146,7 +141,7 @@
 				.style("top", "20px")
 				.style("justify-content", "center");
 		});
-		d3.xml("svg/thesisfull.svg", function(xml) {
+		d3.xml("svg/thesis.svg", function(xml) {
 			var destination = document.getElementById("full");
 			destination.appendChild(xml.documentElement);
 
@@ -160,6 +155,9 @@
 	</script>
 	<div id="everything">
 		<div id="stat">
+			<div id="senateWTopStat" title = "">
+				
+			</div>
 		</div>
 
 		<div id="key">
