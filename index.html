@@ -41,9 +41,20 @@
 		}
 		
 		#senateW {
+
+			position: relative;
+		}
+			#senateWW {
 			width: 550px;
 			margin-left: 25px;
 			overflow: hidden;
+			position: relative;
+		}
+			#senateWM {
+			width: 550px;
+			margin-left: 25px;
+			overflow: hidden;
+			position: relative;
 		}
 		
 		#senateM {
@@ -51,9 +62,13 @@
 			margin-left: 25px;
 			overflow: hidden;
 		}
+
+		
+		
 		#full {
 			top: 175px;
 		}
+		
 		/*CSS rollover applied to SVG*/
 		
 		svg,
@@ -66,7 +81,7 @@
 
 	<script>
 		//header
-		d3.xml("svg/oneStatHeader.svg", function(xml) {
+		d3.xml("svg/statHeader.svg", function(xml) {
 			var destination = document.getElementById("stat");
 			destination.appendChild(xml.documentElement);
 			var element = d3.select("#stat");
@@ -81,23 +96,33 @@
 
 		});
 		//senate women
-		d3.xml("svg/senateWomen.svg", function(xml) {
+		d3.xml("svg/senateWTitle.svg", function(xml) {
 			var destination = document.getElementById("senateW");
 			destination.appendChild(xml.documentElement);
-			var element = d3.select("#SenateWomenPercentW");
-			element.insert("div",":first-child")
-					.style("position", "relative")
-					.style("top", "20px")
-					.style("text-transform", "uppercase")
-					.text(element.attr("title"));	
-					
+			var element = d3.select("#senateW");
+
+		});
+			d3.xml("svg/senateWomenW.svg", function(xml) {
+			var destination = document.getElementById("senateWW");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#senateWW");
+
+		});
+			d3.xml("svg/senateWomenM.svg", function(xml) {
+			var destination = document.getElementById("senateWM");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#senateWM");
+
+		});
+			
+		
 	
 		element.on("mouseover", function() { 
 					// setting the text of the page headline
-					d3.select("#senateWomenPercentW").text(element.attr("title"));
+					d3.select("#stat").text(element.attr("title"));
 					// and marking the element we rolled over
-				})
-			});
+				});
+				
 		//sentate Men
 		d3.xml("svg/senateMen.svg", function(xml) {
 			var destination = document.getElementById("senateM");
@@ -152,10 +177,12 @@
 				.style("position", "relative")
 				.style("top", "20px");
 		});
+		
 	</script>
+	
 	<div id="everything">
 		<div id="stat">
-			<div id="senateWTopStat" title = "">
+			<div id="senateWTopStat">
 				
 			</div>
 		</div>
@@ -165,6 +192,10 @@
 		<div id="senate">
 			<h2> SENATE </h2>
 			<div id="senateW">
+			<div id= "senateWW" title = "11% of women prefer a female political leader and 76% have no difference in preference. Women comprise 20% of the Senate">
+			</div>
+			<div id = "senateWM" title = "12% of women prefer a male political leader and 76% have no difference in preference.  Women comprise 20% of the Senate">
+			</div>
 			</div>
 			<div id="senateM">
 			</div>
