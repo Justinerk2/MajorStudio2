@@ -1,0 +1,187 @@
+	<script>
+	
+		//senate women
+		d3.xml("svg/senateWTitle.svg", function(xml) {
+			var destination = document.getElementById("senateW");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#senateW");
+			element.insert("div",":first-child")
+					.style("position", "relative")
+					.style("top", "185px")
+					.style("text-transform", "uppercase")
+					.text(element.attr("title"));
+					
+// 			adding mouse interaction, so we manipulate dom elements other than the one that triggers the mouse event
+			element.on("mouseover", function() { 
+				// setting the text of the page headline
+				d3.select("#senateWTopStat").text(element.attr("title"));
+			})
+		});
+		d3.xml("svg/senateWomenW.svg", function(xml) {
+			var destination = document.getElementById("senateWW");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#senateWW");
+			// element.insert("div",":first-child")
+			// 		.style("position", "relative")
+			// 		.style("top", "185px")
+			// 		.style("text-transform", "uppercase")
+			// 		.text(element.attr("title"));
+					
+			// adding mouse interaction, so we manipulate dom elements other than the one that triggers the mouse event
+			element.on("mouseover", function() { 
+				// setting the text of the page headline
+				d3.select("#senateWTopStat").text(element.attr("title"));
+			})
+		});
+		d3.xml("svg/senateWomenM.svg", function(xml) {
+			var destination = document.getElementById("senateWM");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#senateWM");
+
+		});
+
+		//sentate Men
+		// d3.xml("svg/senateMen.svg", function(xml) {
+		// 	var destination = document.getElementById("senateM");
+		// 	destination.appendChild(xml.documentElement);
+
+
+		// 	// and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+		// 	var element = d3.select("#senateM");
+
+		// 	element.insert("div", ":first-child")
+		// 		.style("position", "relative")
+		// 		.style("top", "20px")
+
+
+		// });
+		//senate girls
+		// d3.xml("svg/senateGirls.svg", function(xml) {
+		// 	var destination = document.getElementById("senateG");
+		// 	destination.appendChild(xml.documentElement);
+
+
+		// 	// and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+		// 	var element = d3.select("#senateG");
+
+		// 	element.insert("div", ":first-child")
+		// 		.style("position", "relative")
+		// 		.style("top", "20px");
+		// });
+		// //senate boys
+		// d3.xml("svg/senateBoys.svg", function(xml) {
+		// 	var destination = document.getElementById("senateB");
+		// 	destination.appendChild(xml.documentElement);
+
+
+		// 	// and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+		// 	var element = d3.select("#senateB");
+
+		// 	element.insert("div", ":first-child")
+		// 		.style("position", "relative")
+		// 		.style("top", "20px")
+		// });
+		// d3.xml("svg/thesis.svg", function(xml) {
+		// 	var destination = document.getElementById("full");
+		// 	destination.appendChild(xml.documentElement);
+
+
+			// and while we are at it, let's leverage d3 and js to do some annotation work pulled from the attributes of our destination element
+	</script>
+
+<div id="everything">
+	<div id="stat">
+		<div id="senateWTopStat">
+
+		</div>
+	</div>
+
+	<div id="key">
+	</div>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<div id="carousel" class= "carousel slide">
+					<div class="carousel-inner">
+
+						<div class="item">
+
+							<div id="senate" alt="">
+								<h2> SENATE </h2>
+								<div id="senateWo">
+<div id="senateW">
+</div>
+									<!--<div id="senateW" title="if you want a dynamic title, you need to feed it with attribute values from the destination element">-->
+									<!--</div>-->
+									<div id="senateWW" title="11% of women prefer a female political leader and 76% have no difference in preference. Women comprise 20% of the Senate">
+									</div>
+									<div id="senateWM" title="12% of women prefer a male political leader and 76% have no difference in preference.  Men comprise 80% of the Senate">
+									</div>
+								</div>
+								<!--<div id="senateMe">-->
+								<!--	<div id="senateM">-->
+								<!--	</div>-->
+								<!--	<div id="senateMW" title="7% of men prefer a female political leader and 74% have no difference in preference. Women comprise 20% of the Senate">-->
+								<!--	</div>-->
+								<!--	<div id="senateMM" title="17% of men prefer a male political leader and 74% have no difference in preference.  Men comprise 80% of the Senate">-->
+								<!--	</div>-->
+								<!--</div>-->
+								<!--<div id="senateGi">-->
+
+								<!--	<div id="senateG">-->
+								<!--	</div>-->
+								<!--	<div id="senateGW" title="8% of girls prefer a female political leader and 69% have no difference in preference. Women comprise 20% of the Senate">-->
+								<!--	</div>-->
+								<!--	<div id="senateGM" title="23% of girls prefer a male political leader and 69% have no difference in preference.  Men comprise 80% of the Senate">-->
+								<!--	</div>-->
+								<!--</div>-->
+								<!--<div id="senateBo">-->
+								<!--	<div id="senateB">-->
+								<!--	</div>-->
+								<!--	<div id="senateBW" title="4% of boys prefer a female political leader and 56% have no difference in preference. Women comprise 20% of the Senate">-->
+								<!--	</div>-->
+								<!--	<div id="senateBM" title="40% of boys prefer a male political leader and 56% have no difference in preference.  Men comprise 80% of the Senate">-->
+								<!--	</div>-->
+								<!--</div>-->
+							</div>
+						</div>
+						<!--<div class="item">-->
+						<!--		<div id="house" alt="">-->
+						<!--			<h2> HOUSE OF REPRESENTATIVES </h2>-->
+						<!--		</div>-->
+						<!--</div>-->
+						<!--<div class="item">-->
+						<!--	<div id="stateleg" alt="">-->
+						<!--		<h2> STATE LEGISLATORS </h2>-->
+						<!--	</div>-->
+						<!--</div>-->
+						<!--<div class="item">-->
+
+						<!--	<div id="gov" alt="">-->
+						<!--		<h2> GOVENORS </h2>-->
+						<!--	</div>-->
+						<!--</div>-->
+						<!--<div class="item">-->
+						<!--	<div id="fedjudge" alt="">-->
+						<!--		<h2> US FEDERAL COURT JUDGES </h2>-->
+						<!--	</div>-->
+						<!--</div>-->
+						<!--<div class="item">-->
+						<!--	<div id="statejudge" alt="">-->
+						<!--		<h2> US STATE COURT JUDGES </h2>-->
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<div id="full">
+	</div>
+	<div id="information">
+	</div>
+
+
+</div>
