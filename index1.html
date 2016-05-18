@@ -23,13 +23,14 @@
 			width: 100%;
 			position: absolute;
 			z-index: -1;
-			background-color: #FFF1E2;
 		}
 		#stat{
-			position: fixed;
+			position: relative;
 			width:100%;
 			z-index:1;
 			margin-left:25%;
+			margin-top:80px;
+			background-color: #FFF1E2;
 			
 		}
 		
@@ -37,19 +38,18 @@
 			position: fixed;
 			width: 100%;
 			z-index: 2;
-			padding-top:20px;
 			padding-left: 15%;
-			top: 150px;
-			height: 100px;
-				font-size: 30px;
-				color:#6DB7A1;
+			padding-top:10px;
+			height: 80px;
+			font-size: 30px;
+			color:#6DB7A1;
 			background-color: #FFFFFF;
 		}
 		
 		#key {
 			position: relative;
 			width: 100%;
-			top: 250px;
+			top: 75px;
 		}
 		
 		#senate {
@@ -61,7 +61,7 @@
 		
 		#senateW {
 			position: absolute;
-			width: 50px;
+			width: 200px;
 		}
 		
 		#senateWW {
@@ -82,9 +82,24 @@
 			width: 550px;
 			margin-left: 25px;
 			overflow: hidden;
-			position: absolute;
+			position: relative;
 			top:400px;
+			
 		}
+			#senateMW {
+			width: 250px;
+			margin-left: 75px;
+			overflow: hidden;
+			position: absolute;
+		}
+		
+		#senateMM {
+			width: 250;
+			margin-left: 300px;
+			overflow: hidden;
+			position: absolute;
+		}
+		
 		
 			#senateG {
 			width: 550px;
@@ -103,7 +118,11 @@
 		#full {
 			top: 1000px;
 		}
-		
+			/*CSS rollover applied to SVG*/
+		/*	svg,*/
+		/*img {*/
+		/*	width: 100%;*/
+		/*} */
 /*hide stats until hover*/
 
 #senateWomenWLStat {
@@ -138,6 +157,38 @@
 	opacity: 1;
 }
 
+
+#senateMenWLStat {
+	opacity: 0;
+}
+
+#senateMenWStat {
+	opacity: 0;
+}
+
+#senateMenMLStat {
+	opacity: 0;
+}
+
+#senateMenMStat {
+	opacity: 0;
+}
+
+#senateMenWLStat:hover {
+	opacity: 1;
+}
+
+#senateMenWStat:hover {
+	opacity: 1;
+}
+
+#senateMenMLStat:hover {
+	opacity: 1;
+}
+
+#senateMenMStat:hover {
+	opacity: 1;
+}
 	</style>
 </head>
 
@@ -159,19 +210,38 @@
 			var element = d3.select("#key");
 
 		});
-		//senate women
+		// women title
 		 d3.xml("svg/womenTitle.svg", function(xml) {
 		var destination = document.getElementById("senateW");
 	destination.appendChild(xml.documentElement);
 		var element = d3.select("#senateW");
-	
-					
+		 });
+		 // men title
+		 d3.xml("svg/menTitle.svg", function(xml) {
+		var destination = document.getElementById("senateM");
+	destination.appendChild(xml.documentElement);
+		var element = d3.select("#senateM");
+		 });
+		 // girls title
+		 d3.xml("svg/girlsTitle.svg", function(xml) {
+		var destination = document.getElementById("senateG");
+	destination.appendChild(xml.documentElement);
+		var element = d3.select("#senateG");
+		 });
+		 // boys title
+		 d3.xml("svg/boysTitle.svg", function(xml) {
+		var destination = document.getElementById("senateB");
+	destination.appendChild(xml.documentElement);
+		var element = d3.select("#senateB");
+		 });
+		 
+			//senate women		
 		d3.xml("svg/senateWomenW.svg", function(xml) {
 			var destination = document.getElementById("senateWW");
 			destination.appendChild(xml.documentElement);
 			var element = d3.select("#senateWW");
 	
-					
+	
 			// adding mouse interaction, so we manipulate dom elements other than the one that triggers the mouse event
 			element.on("mouseover", function() { 
 				// setting the text of the page headline
@@ -188,22 +258,91 @@
 			})
 
 		});
+			//senate women		
+		d3.xml("svg/senateMenW.svg", function(xml) {
+			var destination = document.getElementById("senateMW");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#senateMW");
+	
+	
+			// adding mouse interaction, so we manipulate dom elements other than the one that triggers the mouse event
+			element.on("mouseover", function() { 
+				// setting the text of the page headline
+				d3.select("#topStat").text(element.attr("title"));
+			})
+		});
+		d3.xml("svg/senateMenM.svg", function(xml) {
+			var destination = document.getElementById("senateMM");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#senateMM");
+				element.on("mouseover", function() { 
+				// setting the text of the page headline
+				d3.select("#topStat").text(element.attr("title"));
+			})
+
+		});
+			//senate women		
+		d3.xml("svg/senateGirlsW.svg", function(xml) {
+			var destination = document.getElementById("senateGW");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#senateGW");
+	
+	
+			// adding mouse interaction, so we manipulate dom elements other than the one that triggers the mouse event
+			element.on("mouseover", function() { 
+				// setting the text of the page headline
+				d3.select("#topStat").text(element.attr("title"));
+			})
+		});
+		d3.xml("svg/senateGirlsM.svg", function(xml) {
+			var destination = document.getElementById("senateGM");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#senateGM");
+				element.on("mouseover", function() { 
+				// setting the text of the page headline
+				d3.select("#topStat").text(element.attr("title"));
+			})
+
+		});
+			//senate women		
+		d3.xml("svg/senateBoysW.svg", function(xml) {
+			var destination = document.getElementById("senateBW");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#senateBW");
+	
+	
+			// adding mouse interaction, so we manipulate dom elements other than the one that triggers the mouse event
+			element.on("mouseover", function() { 
+				// setting the text of the page headline
+				d3.select("#topStat").text(element.attr("title"));
+			})
+		});
+		d3.xml("svg/senateBoysM.svg", function(xml) {
+			var destination = document.getElementById("senateBM");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#senateBM");
+				element.on("mouseover", function() { 
+				// setting the text of the page headline
+				d3.select("#topStat").text(element.attr("title"));
+			})
+
+		});
 
 
 	</script>
 
 <div id="everything">
-	<div id="stat">
-	</div>
 	<div id="topStat">
 
+	</div>
+	<div id="stat">
 	</div>
 
 	<div id="key">
 	</div>
 
 
-	<di v id="senate">
+	<div id="senate">
 		<h2> SENATE </h2>
 		<div id="senateWo">
 			<div id="senateW">
@@ -211,6 +350,14 @@
 			<div id="senateWW" title="11% of women prefer a female political leader and 76% have no difference in preference. Women comprise 20% of the Senate">
 			</div>
 			<div id="senateWM" title="12% of women prefer a male political leader and 76% have no difference in preference.  Men comprise 80% of the Senate">
+			</div>
+		</div>
+		<div id="senateMe">
+			<div id="senateM">
+			</div>
+			<div id="senateMW" title="7% of men prefer a female political leader and 74% have no difference in preference. Women comprise 20% of the Senate">
+			</div>
+			<div id="senateMM" title="17% of men prefer a male political leader and 74% have no difference in preference.  Men comprise 80% of the Senate">
 			</div>
 		</div>
 	</div>
