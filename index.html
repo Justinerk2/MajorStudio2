@@ -20,21 +20,12 @@
 		
 		#everything {
 			font-family: 'Muli', sans-serif;
+			color: #767C6D;
 			font-size: 24px;
 			width: 100%;
 			position: absolute;
 			z-index: -1;
 		}
-		
-		#stat {
-			position: relative;
-			width: 100%;
-			z-index: 1;
-			margin-left: 25%;
-			margin-top: 80px;
-			background-color: #FFF1E2;
-		}
-		
 		#topStat {
 			position: fixed;
 			width: 100%;
@@ -47,33 +38,42 @@
 			background-color: #FFFFFF;
 		}
 		
+		#stat {
+			position: relative;
+			z-index: 1;
+			margin-top: 80px;
+			margin-left:40px;
+		}
+		
 		#key {
 			position: relative;
-			width: 100%;
-			top: 75px;
+			top: 10px;
+			margin-left:40px;
+		}
+		#full {
+			/*margin-top: 1000px;*/
+			position:relative;
+		top:10px;
+			margin-left:220px
 		}
 		
 		#senate {
 			float: left;
 			left: 25%;
-			top: 250px;
+			top: 10px;
 			position: relative;
-			border: 1px solid red;
-		
 		}
 		
 		#senateWo {
 			position: relative;
-			width:700px;
-			border: 2px solid red;
-		
+			width: 100%;
+			height: 900px;
 		}
 		
-		#senateW {
+		#titleW {
 			position: absolute;
 			width: 30px;
-			border: 2px solid red;
-		
+			overflow: hidden;
 		}
 		
 		#senateWW {
@@ -81,7 +81,6 @@
 			margin-left: 75px;
 			overflow: hidden;
 			position: absolute;
-		border:2px solid red;
 		}
 		
 		#senateWM {
@@ -89,19 +88,18 @@
 			margin-left: 300px;
 			overflow: hidden;
 			position: absolute;
-	border: 2px solid red;
 		}
 		
 		#senateMe {
 			position: relative;
-			width:700px;
+			width: 700px;
 			margin-top: 300px;
-			/*margin-top: 300;*/
 		}
 		
-		#senateM {
+		#titleM {
 			position: absolute;
 			width: 30px;
+			overflow: hidden;
 		}
 		
 		#senateMW {
@@ -124,9 +122,10 @@
 			margin-top: 600px;
 		}
 		
-		#senateG {
+		#titleG {
 			position: absolute;
-			width: 50px;
+			width: 30px;
+			overflow: hidden;
 		}
 		
 		#senateGW {
@@ -145,14 +144,14 @@
 		
 		#senateBo {
 			position: relative;
-				margin-top: 900px;
+			margin-top: 900px;
 			width: 700px;
-			/*margin-top: 300;*/
 		}
 		
-		#senateB {
+		#titleB {
 			position: absolute;
 			width: 30px;
+			overflow: hidden;
 		}
 		
 		#senateBW {
@@ -168,16 +167,102 @@
 			overflow: hidden;
 			position: absolute;
 		}
+		/*#house {*/
+		/*	float: left;*/
+		/*	left: 25%;*/
+		/*	top: 250px;*/
+		/*	position: relative;*/
+		/*}*/
 		
-		#full {
-			top: 1000px;
-		}
+		/*#houseWo {*/
+		/*	position: relative;*/
+		/*	width: 700px;*/
+		/*}*/
+		
+		
+		/*#houseWW {*/
+		/*	width: 250px;*/
+		/*	margin-left: 75px;*/
+		/*	overflow: hidden;*/
+		/*	position: absolute;*/
+		/*}*/
+		
+		/*#houseWM {*/
+		/*	width: 250px;*/
+		/*	margin-left: 300px;*/
+		/*	overflow: hidden;*/
+		/*	position: absolute;*/
+		/*}*/
+		
+		/*#houseMe {*/
+		/*	position: relative;*/
+		/*	width: 700px;*/
+		/*	margin-top: 300px;*/
+		/*}*/
+		
+		/*#houseMW {*/
+		/*	width: 250px;*/
+		/*	margin-left: 75px;*/
+		/*	overflow: hidden;*/
+		/*	position: absolute;*/
+		/*}*/
+		
+		/*#houseMM {*/
+		/*	width: 250px;*/
+		/*	margin-left: 300px;*/
+		/*	overflow: hidden;*/
+		/*	position: absolute;*/
+		/*}*/
+		
+		/*#houseGi {*/
+		/*	position: relative;*/
+		/*	width: 700px;*/
+		/*	margin-top: 600px;*/
+		/*}*/
+		
+		
+		/*#houseGW {*/
+		/*	width: 250px;*/
+		/*	margin-left: 75px;*/
+		/*	overflow: hidden;*/
+		/*	position: absolute;*/
+		/*}*/
+		
+		/*#houseGM {*/
+		/*	width: 250px;*/
+		/*	margin-left: 300px;*/
+		/*	overflow: hidden;*/
+		/*	position: absolute;*/
+		/*}*/
+		
+		/*#houseBo {*/
+		/*	position: relative;*/
+		/*	margin-top: 900px;*/
+		/*	width: 700px;*/
+		/*}*/
+		
+		
+		/*#houseBW {*/
+		/*	width: 250px;*/
+		/*	margin-left: 75px;*/
+		/*	overflow: hidden;*/
+		/*	position: absolute;*/
+		/*}*/
+		
+		/*#houseBM {*/
+		/*	width: 250px;*/
+		/*	margin-left: 300px;*/
+		/*	overflow: hidden;*/
+		/*	position: absolute;*/
+		/*}*/
+		
 		/*CSS rollover applied to SVG*/
 		/*	svg,*/
 		/*img {*/
 		/*	width: 100%;*/
 		/*} */
 		/*hide stats until hover*/
+		/*Senate Hover Stats*/
 		
 		#senateWomenWLStat {
 			opacity: 0;
@@ -242,6 +327,199 @@
 		#senateMenMStat:hover {
 			opacity: 1;
 		}
+		
+		#senateGirlsWLStat {
+			opacity: 0;
+		}
+		
+		#senateGirlsWStat {
+			opacity: 0;
+		}
+		
+		#senateGirlsMLStat {
+			opacity: 0;
+		}
+		
+		#senateGirlsMStat {
+			opacity: 0;
+		}
+		
+		#senateGirlsnWLStat:hover {
+			opacity: 1;
+		}
+		
+		#senateGirlsWStat:hover {
+			opacity: 1;
+		}
+		
+		#senateGirlsMLStat:hover {
+			opacity: 1;
+		}
+		
+		#senateGirlsMStat:hover {
+			opacity: 1;
+		}
+		
+		#senateBoysWLStat {
+			opacity: 0;
+		}
+		
+		#senateBoysWStat {
+			opacity: 0;
+		}
+		
+		#senateBoysMLStat {
+			opacity: 0;
+		}
+		
+		#senateBoysMStat {
+			opacity: 0;
+		}
+		
+		#senateBoysWLStat:hover {
+			opacity: 1;
+		}
+		
+		#senateBoysWStat:hover {
+			opacity: 1;
+		}
+		
+		#senateBoysMLStat:hover {
+			opacity: 1;
+		}
+		
+		#senateBoysMStat:hover {
+			opacity: 1;
+		}
+		/*House Hover Stats*/
+		
+		/*#houseWomenWLStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseWomenWStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseeWomenMLStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseWomenMStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseWomenWLStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseWomenWStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseWomenMLStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseWomenMStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseMenWLStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseMenWStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseMenMLStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseMenMStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseMenWLStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseMenWStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseMenMLStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseMenMStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseGirlsWLStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseGirlsWStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseGirlsMLStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseGirlsMStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseGirlsnWLStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseGirlsWStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseGirlsMLStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseGirlsMStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseBoysWLStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseBoysWStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseBoysMLStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseBoysMStat {*/
+		/*	opacity: 0;*/
+		/*}*/
+		
+		/*#houseBoysWLStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseBoysWStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseBoysMLStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
+		
+		/*#houseBoysMStat:hover {*/
+		/*	opacity: 1;*/
+		/*}*/
 	</style>
 </head>
 
@@ -249,7 +527,7 @@
 
 	<script>
 		// header
-		d3.xml("svg/statHeader.svg", function(xml) {
+		d3.xml("svg/oneStatHeader.svg", function(xml) {
 			var destination = document.getElementById("stat");
 			destination.appendChild(xml.documentElement);
 			var element = d3.select("#stat");
@@ -265,26 +543,27 @@
 		});
 		// women title
 		d3.xml("svg/womenTitle.svg", function(xml) {
-			var destination = document.getElementById("senateW");
+			var destination = document.getElementById("titleW");
 			destination.appendChild(xml.documentElement);
-			var element = d3.select("#senateW");
+			var element = d3.select("#titleW");
 		});
 		// men title
 		d3.xml("svg/menTitle.svg", function(xml) {
+			var destination = document.getElementById("titleM");
 			destination.appendChild(xml.documentElement);
-			var element = d3.select("#senateM");
+			var element = d3.select("#titleM");
 		});
 		// girls title
 		d3.xml("svg/girlsTitle.svg", function(xml) {
-			var destination = document.getElementById("senateG");
+			var destination = document.getElementById("titleG");
 			destination.appendChild(xml.documentElement);
-			var element = d3.select("#senateG");
+			var element = d3.select("#titleG");
 		});
 		// boys title
 		d3.xml("svg/boysTitle.svg", function(xml) {
-			var destination = document.getElementById("senateB");
+			var destination = document.getElementById("titleB");
 			destination.appendChild(xml.documentElement);
-			var element = d3.select("#senateB");
+			var element = d3.select("#titleB");
 		});
 
 		//senate women		
@@ -310,7 +589,7 @@
 			})
 
 		});
-		//senate women		
+		//senate men		
 		d3.xml("svg/senateMenW.svg", function(xml) {
 			var destination = document.getElementById("senateMW");
 			destination.appendChild(xml.documentElement);
@@ -333,7 +612,7 @@
 			})
 
 		});
-		//senate women		
+		//senate girls		
 		d3.xml("svg/senateGirlsW.svg", function(xml) {
 			var destination = document.getElementById("senateGW");
 			destination.appendChild(xml.documentElement);
@@ -356,7 +635,7 @@
 			})
 
 		});
-		//senate women		
+		//senate boys		
 		d3.xml("svg/senateBoysW.svg", function(xml) {
 			var destination = document.getElementById("senateBW");
 			destination.appendChild(xml.documentElement);
@@ -379,6 +658,13 @@
 			})
 
 		});
+
+			d3.xml("svg/thesis.svg", function(xml) {
+			var destination = document.getElementById("full");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#full");
+
+		});
 	</script>
 
 	<div id="everything">
@@ -390,46 +676,80 @@
 
 		<div id="key">
 		</div>
-
+		<div id= "full">
+		</div>
 
 		<div id="senate">
 			<h2> SENATE </h2>
 			<div id="senateWo">
-				<div id="senateW">
+				<div id="titleW">
 				</div>
-				<div id="senateWW" title="11% of women prefer a female political leader and 76% have no difference in preference. Women comprise 20% of the Senate">
+				<div id="senateWW" title="11% of women prefer a female political leader and 76% have no difference in preference. Women comprise 20% of the Senate.">
 				</div>
-				<div id="senateWM" title="12% of women prefer a male political leader and 76% have no difference in preference.  Men comprise 80% of the Senate">
+				<div id="senateWM" title="12% of women prefer a male political leader and 76% have no difference in preference.  Men comprise 80% of the Senate.">
 				</div>
 			</div>
 			<div id="senateMe">
-				<div id="senateM">
+				<div id="titleM">
 				</div>
-				<div id="senateMW" title="7% of men prefer a female political leader and 74% have no difference in preference. Women comprise 20% of the Senate">
+				<div id="senateMW" title="7% of men prefer a female political leader and 74% have no difference in preference. Women comprise 20% of the Senate.">
 				</div>
-				<div id="senateMM" title="17% of men prefer a male political leader and 74% have no difference in preference.  Men comprise 80% of the Senate">
+				<div id="senateMM" title="17% of men prefer a male political leader and 74% have no difference in preference.  Men comprise 80% of the Senate.">
 				</div>
 			</div>
 			<div id="senateGi">
-				<div id="senateG">
+				<div id="titleG">
 				</div>
-				<div id="senateGW" title="11% of women prefer a female political leader and 76% have no difference in preference. Women comprise 20% of the Senate">
+				<div id="senateGW" title="8% of girls prefer a female political leader and 69% have no difference in preference.  Women comprise 20% of the Senate.">
 				</div>
-				<div id="senateGM" title="12% of women prefer a male political leader and 76% have no difference in preference.  Men comprise 80% of the Senate">
+				<div id="senateGM" title="23% of girls prefer a male political leader and 69% have no difference in preference.  Men comprise 80% of the Senate.">
 				</div>
 			</div>
 			<div id="senateBo">
-				<div id="senateB">
+				<div id="titleB">
 				</div>
-				<div id="senateBW" title="11% of women prefer a female political leader and 76% have no difference in preference. Women comprise 20% of the Senate">
+				<div id="senateBW" title="4% of boys prefer a female political leader and 56% have no difference in preference.  Women comprise 20% of the Senate.">
 				</div>
-				<div id="senateBM" title="12% of women prefer a male political leader and 76% have no difference in preference.  Men comprise 80% of the Senate">
+				<div id="senateBM" title="40% of boys prefer a male political leader and 56% have no difference in preference.  Men comprise 80% of the Senate.">
 				</div>
 			</div>
 		</div>
-		<div id="full">
+<!--House of reps-->
+<!--		<div id="house">-->
+<!--			<h2> HOUSE OF REPRESENTATIVES </h2>-->
+<!--			<div id="houseWo">-->
+<!--				<div id="titleW">-->
+<!--				</div>-->
+<!--				<div id="houseWW" title="11% of women prefer a female political leader and 76% have no difference in preference. Women comprise 19% of the House of Representatives.">-->
+<!--				</div>-->
+<!--				<div id="houseWM" title="12% of women prefer a male political leader and 76% have no difference in preference.  Men comprise 81% of the House of Representatives.">-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div id="houseMe">-->
+<!--				<div id="titleM">-->
+<!--				</div>-->
+<!--				<div id="houseMW" title="7% of men prefer a female political leader and 74% have no difference in preference. Men comprise 81% of the House of Representatives.">-->
+<!--				</div>-->
+<!--				<div id="houseMM" title="17% of men prefer a male political leader and 74% have no difference in preference.  Men comprise 81% of the House of Representatives.">-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div id="houseGi">-->
+<!--				<div id="houseG">-->
+<!--				</div>-->
+<!--				<div id="houseGW" title="8% of girls prefer a female political leader and 69% have no difference in preference.  Men comprise 81% of the House of Representatives.">-->
+<!--				</div>-->
+<!--				<div id="houseGM" title="23% of girls prefer a male political leader and 69% have no difference in preference.  Men comprise 81% of the House of Representatives.">-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			<div id="houseBo">-->
+<!--				<div id="titleB">-->
+<!--				</div>-->
+<!--				<div id="houseBW" title="4% of boys prefer a female political leader and 56% have no difference in preference.  Women comprise 19% of the House of Representatives.">-->
+<!--				</div>-->
+<!--				<div id="houseBM" title="40% of boys prefer a male political leader and 56% have no difference in preference.  Men comprise 81% of the House of Representatives.">-->
+<!--				</div>-->
+<!--			</div>-->
 		</div>
-	</div>
 </body>
 
 </html>

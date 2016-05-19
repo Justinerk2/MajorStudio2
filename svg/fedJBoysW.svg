@@ -6,9 +6,9 @@
 <g id="fedJBoysPercentW">
 	<g>
 		<g>
-			<rect x="9.393" y="8.658" fill="#FFF0E1" width="182.683" height="182.684"/>
+			<rect x="9.393" y="8.655" fill="#FFF0E1" width="182.683" height="182.689"/>
 		</g>
-		<rect x="9.393" y="173.078" opacity="0.5" fill="#767C6D" width="182.683" height="18.264"/>
+		<rect x="9.393" y="147.499" opacity="0.5" fill="#767C6D" width="182.683" height="43.846"/>
 	</g>
 </g>
 <g id="fedJBoysWL">
@@ -18,8 +18,8 @@
 		<rect x="9.393" y="79.2" fill="none" stroke="#EDC9B1" stroke-width="4" stroke-miterlimit="10" width="182.685" height="102.301"/>
 </g>
 <g id="fedJBoysWStat">
-	<rect x="13.393" y="135.666" fill="none" width="185.607" height="48.582"/>
-	<text transform="matrix(1 0 0 1 13.3931 148.7881)" opacity="0.5"><tspan x="0" y="0" fill="#767C6D" font-family="'Muli'" font-size="18">Women serving as</tspan><tspan x="0" y="21.6" fill="#767C6D" font-family="'Muli'" font-size="18">Govenors 9%</tspan></text>
+	<rect x="13.393" y="109.328" fill="none" width="185.607" height="48.582"/>
+	<text transform="matrix(1 0 0 1 13.3931 122.4512)" opacity="0.5"><tspan x="0" y="0" fill="#767C6D" font-family="'Muli'" font-size="18">Women serving as</tspan><tspan x="0" y="21.6" fill="#767C6D" font-family="'Muli'" font-size="18">Federal Judges 24%</tspan></text>
 </g>
 <g id="fedJBoysWLStat">
 	<rect x="10.882" y="66.467" fill="none" width="174.683" height="20.938"/>

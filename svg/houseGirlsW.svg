@@ -19,7 +19,7 @@
 	<rect x="12.658" y="117.576" fill="none" width="178.684" height="48.582"/>
 	<text transform="matrix(1 0 0 1 12.6582 130.6992)" opacity="0.5"><tspan x="0" y="0" fill="#767C6D" font-family="'Muli'" font-size="18">Women in the </tspan><tspan x="0" y="21.6" fill="#767C6D" font-family="'Muli'" font-size="18">House of Rep. 19%</tspan></text>
 </g>
-<g id="senateBoysWLStat">
+<g id="houseGirlsWLStat">
 	<rect x="12.658" y="51.126" fill="none" width="174.684" height="20.938"/>
 	<text transform="matrix(1 0 0 1 12.6582 61.3311)" fill="#BBD5C3" font-family="'Muli'" font-size="14">69% No Preference</text>
 	<rect x="12.658" y="180.063" fill="none" width="174.684" height="20.938"/>

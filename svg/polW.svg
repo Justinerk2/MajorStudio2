@@ -3,13 +3,13 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px"
 	 height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-<g id="fedJblockW">
-	<rect x="9.232" y="147.499" opacity="0.15" fill="#767C6D" width="182.684" height="43.846"/>
-</g>
 <g id="background">
 	<g>
 		<rect x="9.232" y="8.655" fill="#FFF0E1" width="182.684" height="182.689"/>
 	</g>
+</g>
+<g id="fedJblockW">
+	<rect x="9.232" y="147.499" opacity="0.15" fill="#767C6D" width="182.684" height="43.846"/>
 </g>
 <g id="sLegblockW">
 	<rect x="9.232" y="147.13" opacity="0.15" fill="#767C6D" width="182.684" height="44.211"/>
