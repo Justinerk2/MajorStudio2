@@ -21,7 +21,7 @@
 	<rect x="12.885" y="167.339" fill="none" width="174.684" height="37.136"/>
 	<text transform="matrix(1 0 0 1 12.8843 177.5449)" fill="#EF885A" font-family="'Muli'" font-size="14">7% Prefer Women</text>
 </g>
-<g id="senateMenWStat_1_">
+<g id="senateMenWStat">
 	<rect x="12.883" y="116.902" fill="none" width="178.684" height="48.582"/>
 	<text transform="matrix(1 0 0 1 12.8828 130.0254)" fill="#767C6D" font-family="'Muli'" font-size="18">Women in the </text>
 	<text transform="matrix(1 0 0 1 12.8828 151.625)" fill="#767C6D" font-family="'Muli'" font-size="18">Senate 20%</text>
