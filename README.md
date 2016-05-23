@@ -8,4 +8,5 @@
 #####This paper also explores the process and methodology used to collect data, analyze the data, and visually communicate the data through the visualization. This analysis also includes Iterations and user testing.
 
 [Preview Image](MajorStudio2/svg/tslidesix.svg)
+
 [Visualization](MajorStudio2/index.html)
