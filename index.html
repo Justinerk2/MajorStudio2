@@ -51,12 +51,26 @@
 			top: 10px;
 			margin-left:40px;
 		}
-		#full {
-			margin-top: 1200px;
+		#static {
+			margin-top: 500px;
 			position:relative;
 			top:10px;
 			margin-right: 420px;
 			/*margin-left:220px*/
+		}
+		#full {
+			position:relative;
+		float: left;
+		}
+			#pol {
+			position:relative;
+		margin-right:500px;
+			margin-top:1200px;
+		}
+			#pref {
+			position:relative;
+		margin-right:500px;
+		margin-top:200px;
 		}
 		
 		#senate {
@@ -2226,6 +2240,17 @@
 			})
 
 		});
+				d3.xml("svg/tslidenine.svg", function(xml) {
+			var destination = document.getElementById("pol");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#pol");
+
+		});
+				d3.xml("svg/tslideeight.svg", function(xml) {
+			var destination = document.getElementById("pref");
+			destination.appendChild(xml.documentElement);
+			var element = d3.select("#pref");
+		});
 		
 		
 	</script>
@@ -2450,9 +2475,14 @@
 				<div id="stJBM" title="40% of boys prefer a male political leader and 56% have no difference in preference.  Men comprise 73% of US State Court Judges.">
 				</div>
 			</div>
-			
+				
+			<div id = "pol">
+			</div>
+			<div id = "pref">
+			</div>
+			<div id = static>
 		<div id= "full">
-	
+			</div>
 			</div>
 		</div>
 </body>
