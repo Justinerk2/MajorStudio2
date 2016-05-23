@@ -1,0 +1,5 @@
+"The Women's Leadership Gap." American Progress. Accessed April 05, 2016. https://www.americanprogress.org/issues/women/report/2015/08/04/118743/the-womens-leadership-gap/.
+McIntyre, Joseph, Alison Cashin, Trisha Ross Anderson, Jennifer Kahn, and Luba Falk Feigenberg. "Leaning Out: Teen Girls & Leadership Biases." Leaning Out: Teen Girls & Leadership Biases. 2014. Accessed April 05, 2016. http://mcc.gse.harvard.edu/leaningout.
+"No Ceilings: The Full Participation Project." No Ceilings: The Full Participation Project. Accessed April 05, 2016. http://noceilings.org/.
+"Women and Leadership." Pew Research Centers Social Demographic Trends Project RSS. 2015. Accessed April 05, 2016. http://www.pewsocialtrends.org/2015/01/14/women-and-leadership/.
+Schoenberg, Judy, Kimberlee Salmond, and Paula Fleshman. "Change It Up! What Girls Say about Redefining Leadership." Girl Scout Research Institute. 2008. http://www.girlscouts.org/content/dam/girlscouts-gsusa/forms-and-documents/about-girl-scouts/research/change_it_up_executive_summary_english.pdf.
